@@ -5,13 +5,14 @@
         "importHelpers": true,
         "target": "es2017",
         "noImplicitAny": false,
-        "sourceMap": false,
+        "sourceMap": true,
         "experimentalDecorators": true,
         "moduleResolution": "node",
         "allowJs": true,
         "preserveConstEnums": true
     },
     "exclude": [
-        "./jest.config.js"
+        "./jest.config.js",
+        "./languages.js"
     ]
 }

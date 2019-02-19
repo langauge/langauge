@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+const yamljs = require("yamljs")
+    , axios = require("axios")
+    , path = require("path")
+    , fs = require("fs")
+    , LANGUAGES_YML_URL = "https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml";
+
+(async () => {
+
+    try {
+
+        const response = await axios.get(LANGUAGES_YML_URL)
+            , parsed = yamljs.parse(response.data)
+            , json = JSON.stringify(parsed, null, 4);
+
+        fs.writeFileSync(path.resolve(__dirname, "../languages.js"), `module.exports = ${json};`);
+
+    } catch (err) {
+
+        console.error("- failed to fetch and parse languages yml", err);
+
+    }
+})();

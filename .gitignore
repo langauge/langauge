@@ -4,5 +4,6 @@
 node_modules
 src/**/*.js
 config/**/*.js
+*.js.map
 langauge.js
 *.log

@@ -1,25 +1,15 @@
-import { define, singleton, inject, cache } from "appolo";
+import { define, singleton, inject } from "appolo";
 import { HttpService, IResponse } from "@appolo/http";
-import * as _ from "lodash";
+import { IDictionary } from "../common/interfaces";
+import IEnv from "../../config/env/IEnv";
 
-const TEN_MINUTES_IN_MS = 1000 * 60 * 10;
 
 @define()
 @singleton()
 export class GithubService {
 
-    @inject() httpService: HttpService;
-
-    @cache({ maxAge: TEN_MINUTES_IN_MS })
-    public async getRepositoryBytes(owner: string, repo: string) {
-        const languages = await this.getRepositoryLanguages(owner, repo);
-        const totalBytes = _(languages).values().sum();
-
-        return {
-            total: totalBytes,
-            ...languages
-        };
-    }
+    @inject() private httpService: HttpService;
+    @inject() private env: IEnv;
 
     public async getRepository(owner: string, repo: string) {
         const response = await this.makeRequest("get", `repos/${owner}/${repo}`);
@@ -27,7 +17,8 @@ export class GithubService {
         return response.data;
     }
 
-    public async getRepositoryLanguages(owner: string, repo: string) {
+    public async getRepositoryLanguages(owner: string, repo: string): Promise<IDictionary<number>> {
+
         const response = await this.makeRequest("get", `repos/${owner}/${repo}/languages`);
 
         return response.data;
