@@ -21,4 +21,7 @@ export class LangaugeModel extends RouteModel {
 
     @validationParam(validator.boolean().optional().default(true))
     colors: boolean;
+
+    @validationParam(validator.number().min(0).optional().default(0))
+    columns: number;
 }

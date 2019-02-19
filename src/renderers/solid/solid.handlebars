@@ -2,7 +2,8 @@
     xmlns:xlink="http://www.w3.org/1999/xlink">
 
     {{#each languages}}
-    <g transform="translate({{this.xPosition}}, 0)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate({{this.translateX}}, {{this.translateY}})" stroke="none" stroke-width="1" fill="none"
+        fill-rule="evenodd">
         <g transform="translate(0, -10.000000)">
 
             <circle fill="{{this.color}}" cx="51" cy="51" r="32"></circle>

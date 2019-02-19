@@ -13,6 +13,7 @@ export interface ILangaugeOptions {
     output: OutputFormat;
     threshold: number;
     colors: boolean;
+    columns: number;
 }
 
 function getCacheKeyResolver(owner: string, repo: string, options: ILangaugeOptions): string {

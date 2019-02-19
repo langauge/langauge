@@ -1,5 +1,5 @@
 import { define, aliasFactory } from "appolo";
-import { BaseRenderer, IRenderer, IRendererLanguage } from "../baseRenderer";
+import { BaseRenderer, IRendererLanguage } from "../baseRenderer";
 import { GaugeType } from "../../common/enums";
 import * as handlebars from "handlebars";
 import * as sharp from "sharp";
@@ -15,26 +15,49 @@ const GAUGE_HEIGHT = 120;
 
 @define()
 @aliasFactory("IRenderer")
-export class SolidRenderer extends BaseRenderer implements IRenderer {
+export class SolidRenderer extends BaseRenderer {
 
     public static readonly TYPE: string = GaugeType.Solid;
 
     protected async _render(): Promise<sharp.Sharp> {
 
         const languages = this.hydrateRendererLanguages()
-            , width = languages.length * GAUGE_WIDTH
-            , height = GAUGE_HEIGHT
-            , svg = handlebars.compile(SOLID_TEMPLATE)({ languages, width, height })
-            , renderer = sharp(Buffer.from(svg));
+            , totalLanguages = languages.length
+            , [width, height] = this.calculageCanvasSize(totalLanguages)
+            , svg = Buffer.from(handlebars.compile(SOLID_TEMPLATE)({ languages, width, height }));
 
-        return renderer.resize(width, height);
+        return sharp(svg).resize(width, height);
     }
 
-    private hydrateRendererLanguages(): Array<IRendererLanguage & { rotation: number; xPosition: number; }> {
-        return _.map(this.languages, (language: IRendererLanguage, i: number) => ({
-            ...language,
-            rotation: language.percent / 100 * (ROTATION_EDGE_DEGREE * 2) - ROTATION_EDGE_DEGREE,
-            xPosition: i * GAUGE_WIDTH
-        }));
+    private calculageCanvasSize(languagesCount: number): [number, number] {
+        return [
+            this.options.columns * GAUGE_WIDTH,
+            Math.ceil(languagesCount / this.options.columns) * GAUGE_HEIGHT
+        ];
+    }
+
+    private hydrateRendererLanguages(): Array<IRendererLanguage & { rotation: number; translateX: number; translateY: number; }> {
+        const results = [];
+
+        const languagesRows = _.chunk(this.languages, this.options.columns);
+
+        let currentLanguage: IRendererLanguage;
+
+        for (let i = 0, rows = languagesRows.length; i < rows; i++) {
+
+            for (let j = 0, columns = languagesRows[i].length; j < columns; j++) {
+
+                currentLanguage = languagesRows[i][j];
+
+                results.push({
+                    ...currentLanguage,
+                    rotation: currentLanguage.percent / 100 * (ROTATION_EDGE_DEGREE * 2) - ROTATION_EDGE_DEGREE,
+                    translateX: j * GAUGE_WIDTH,
+                    translateY: i * GAUGE_HEIGHT
+                });
+            }
+        }
+
+        return results;
     }
 }
