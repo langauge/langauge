@@ -8,5 +8,5 @@ LANGAUGE.IO
 Stylize README files with your repositories programming languages usage.
 </h3>
 <p align="center">
-<img alt="Langauge" src="https://www.langauge.io/langauge/langauge" />
+<img alt="Langauge" src="https://badge.langauge.io/langauge/langauge" />
 </p>
