@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "main": "langauge.js",
   "scripts": {
-    "start": "node languages --production",
+    "start": "node app --production",
     "tsc": "tsc",
+    "commit": "npx commitify",
     "tsc:watch": "tsc -w",
     "test": "jest",
     "fetch:langs": "scripts/fetch_languages",

@@ -12,7 +12,9 @@
         "preserveConstEnums": true
     },
     "exclude": [
-        "./jest.config.js",
-        "./languages.js"
+        "node_modules",
+        "scripts",
+        "jest.config.js",
+        "data/languages.js"
     ]
 }

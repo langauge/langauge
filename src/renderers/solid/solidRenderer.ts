@@ -2,7 +2,7 @@ import { define, aliasFactory } from "appolo";
 import { BaseRenderer, IRenderer } from "../baseRenderer";
 import { GaugeTypes, OutputFormat } from "../../common/enums";
 import * as handlebars from "handlebars";
-import * as languages from "../../../languages";
+import * as languages from "../../../data/languages";
 import * as sharp from "sharp";
 import * as _ from "lodash";
 import * as path from "path";

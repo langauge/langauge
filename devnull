@@ -1,0 +1,5 @@
+
+> langauge@1.0.0 tsc /Users/udidu/dev/langauge/langauge
+> tsc
+
+error TS5055: Cannot write file '/Users/udidu/dev/langauge/langauge/data/languages.js' because it would overwrite input file.
