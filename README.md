@@ -74,11 +74,11 @@ Scale the result size.
 
 **NOTE!** There is a regression in `libsvg` pacakge, The `scale` option is not stable.
 
-Example:
+### Example:
 
 `<img title="Langauge" src="https://badge.langauge.io/langauge/langauge?columns=2&colors=false" />`
 
-Result:
+#### Result:
 
 <p align="center">
 <img title="Langauge" src="https://badge.langauge.io/langauge/langauge?columns=2&colors=false" />
