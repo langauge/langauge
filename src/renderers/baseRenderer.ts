@@ -32,8 +32,9 @@ export abstract class BaseRenderer implements IRenderer {
 
         this.languages = this.createLanguages(languagesBytes);
 
-        this.options.columns = this.options.columns || this.languages.length;
-
+        const { columns } = this.options;
+        const totalLanguages = this.languages.length;
+        this.options.columns = columns && columns > totalLanguages ? columns : totalLanguages;
     }
 
     public async render(): Promise<Buffer> {
