@@ -17,11 +17,11 @@ Stylize README files with your repositories programming languages usage.
 
 Add Langauge to your README or Website
 
-#### Markdown
+#### Using Markdown
 
 `![Langauge](https://badge.langauge.io/:owner/:repo)`
 
-#### HTML
+#### Using HTML
 
 `<img alt="Langauge" src="https://badge.langauge.io/:owner/:repo" />`
 
