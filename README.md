@@ -5,7 +5,7 @@
 LANGAUGE.IO &middot; <a href="https://github.com/langauge/langauge/blob/master/LICENSE"><img title="License" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
 </h2>
 <h3 align="center">
-Stylize README files with your repositories programming languages usage.
+Stylize README files with your repositories programming languages used.
 </h3>
 <p align="center">
 <img title="Langauge" src="https://badge.langauge.io/langauge/langauge" />
