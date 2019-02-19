@@ -16,6 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/langauge/langauge.git"
   },
+  "engines": {
+    "node": "10.x.x",
+    "npm": "6.x.x"
+  },
   "keywords": [],
   "author": {
     "name": "Udi Talias",
