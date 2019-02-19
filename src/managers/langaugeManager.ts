@@ -1,10 +1,12 @@
-import { singleton, define, inject, injectAliasFactory } from "appolo";
+import { singleton, define, inject, injectAliasFactory, cache } from "appolo";
 import { ILogger } from "@appolo/logger";
 import { GaugeTypes, OutputFormat } from "../common/enums";
 import { GithubService } from "../services/githubService";
 import * as _ from "lodash";
 import { IRenderer } from "../renderers/baseRenderer";
 import { IDictionary } from "../common/interfaces";
+
+const TEN_MINUTES_IN_MILLISECONDS = 1000 * 60 * 10;
 
 export interface ILangaugeOptions {
     type: GaugeTypes;
@@ -21,8 +23,8 @@ export class LangaugeManager {
     @inject() private githubService: GithubService;
     @injectAliasFactory("IRenderer", "TYPE") private rendererCreators: { [index: string]: (options: ILangaugeOptions, totalBytes: number, languagesBytes: IDictionary<number>) => IRenderer };
 
+    @cache({ maxAge: TEN_MINUTES_IN_MILLISECONDS, resolver: (owner: string, repo: string, options: ILangaugeOptions) => `${owner}/${repo}/${JSON.stringify(options)}` })
     public async generate(owner: string, repo: string, options: ILangaugeOptions): Promise<Buffer> {
-
         try {
 
             const createRenderer = this.rendererCreators[options.type]
