@@ -9,8 +9,8 @@
     "commit": "npx commitify",
     "tsc:watch": "tsc -w",
     "test": "jest",
-    "fetch:langs": "scripts/fetch_languages",
-    "postinstall": "scripts/postinstall.sh"
+    "fetch:langs": "./scripts/fetch_languages",
+    "postinstall": "./scripts/postinstall.sh"
   },
   "repository": {
     "type": "git",
