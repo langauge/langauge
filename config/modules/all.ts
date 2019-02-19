@@ -7,6 +7,6 @@ module.exports = async function (env: IEnv, app: App) {
 
     await app.module(LoggerModule);
 
-    await app.module(new HttpModule());
+    await app.module(HttpModule);
 
 }

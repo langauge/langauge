@@ -2,11 +2,10 @@ import { singleton, define, inject, injectAliasFactory, cache } from "appolo";
 import { ILogger } from "@appolo/logger";
 import { GaugeType, OutputFormat } from "../common/enums";
 import { GithubService } from "../services/githubService";
-import * as _ from "lodash";
 import { IRenderer } from "../renderers/baseRenderer";
 import { IDictionary } from "../common/interfaces";
-
-const TEN_MINUTES_IN_MILLISECONDS = 1000 * 60 * 10;
+import { TEN_MINUTES_IN_MILLISECONDS } from "../common/constants";
+import * as _ from "lodash";
 
 export interface ILangaugeOptions {
     type: GaugeType;
@@ -14,6 +13,7 @@ export interface ILangaugeOptions {
     threshold: number;
     colors: boolean;
     columns: number;
+    scale: number;
 }
 
 function getCacheKeyResolver(owner: string, repo: string, options: ILangaugeOptions): string {

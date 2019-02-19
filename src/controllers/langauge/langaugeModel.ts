@@ -24,4 +24,7 @@ export class LangaugeModel extends RouteModel {
 
     @validationParam(validator.number().min(0).optional().default(0))
     columns: number;
+
+    @validationParam(validator.number().min(0.1).optional().default(1))
+    scale: number;
 }

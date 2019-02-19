@@ -6,6 +6,7 @@ import * as sharp from "sharp";
 import * as _ from "lodash";
 import * as path from "path";
 import * as fs from "fs";
+import { DEFAULT_DPI } from "../../common/constants";
 
 const SOLID_TEMPLATE_PATH = path.resolve(__dirname, "solid.handlebars");
 const SOLID_TEMPLATE = fs.readFileSync(SOLID_TEMPLATE_PATH, { encoding: "utf8" });
@@ -24,9 +25,13 @@ export class SolidRenderer extends BaseRenderer {
         const languages = this.hydrateRendererLanguages()
             , totalLanguages = languages.length
             , [width, height] = this.calculageCanvasSize(totalLanguages)
+            , destWidth = width * this.options.scale
+            , destHeight = height * this.options.scale
+            , dpi = DEFAULT_DPI * destWidth / width
             , svg = Buffer.from(handlebars.compile(SOLID_TEMPLATE)({ languages, width, height }));
 
-        return sharp(svg).resize(width, height);
+        return sharp(svg, { density: dpi })
+            .resize(destWidth, destHeight);
     }
 
     private calculageCanvasSize(languagesCount: number): [number, number] {
