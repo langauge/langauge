@@ -1,4 +1,4 @@
-export enum GaugeTypes {
+export enum GaugeType {
     Solid = "solid"
 }
 

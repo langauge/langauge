@@ -1,6 +1,6 @@
 import { RouteModel, validationParam, validator } from "appolo";
 import { enumValues } from "../../common/utils";
-import { GaugeTypes, OutputFormat } from "../../common/enums";
+import { GaugeType, OutputFormat } from "../../common/enums";
 
 export class LangaugeModel extends RouteModel {
 
@@ -10,8 +10,8 @@ export class LangaugeModel extends RouteModel {
     @validationParam(validator.string().required())
     repo: string;
 
-    @validationParam(validator.string().valid(enumValues(GaugeTypes)).optional().default(GaugeTypes.Solid))
-    type: GaugeTypes;
+    @validationParam(validator.string().valid(enumValues(GaugeType)).optional().default(GaugeType.Solid))
+    type: GaugeType;
 
     @validationParam(validator.string().valid(enumValues(OutputFormat)).optional().default(OutputFormat.PNG))
     output: OutputFormat;

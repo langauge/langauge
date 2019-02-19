@@ -1,10 +1,9 @@
 import { controller, Controller, inject, get, IRequest, IResponse, validation } from "appolo";
-import { ILogger } from "@appolo/logger";
 import { LangaugeModel } from "./langaugeModel";
 import { LangaugeManager } from "../../managers/langaugeManager";
 import { OutputFormat } from "../../common/enums";
 
-@controller("/langauge")
+@controller()
 export class LangaugeController extends Controller {
 
     @inject() private langaugeManager: LangaugeManager;
