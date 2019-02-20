@@ -12,8 +12,8 @@ const yamljs = require("yamljs")
     try {
 
         const response = await axios.get(LANGUAGES_YML_URL)
-            , parsed = yamljs.parse(response.data)
-            , json = JSON.stringify(parsed, null, 4);
+            , yaml = yamljs.parse(response.data)
+            , json = JSON.stringify(yaml, null, 4);
 
         fs.writeFileSync(DESTINATION_PATH, `module.exports = ${json};`);
 
