@@ -1,7 +1,7 @@
 import { controller, Controller, inject, get, IRequest, IResponse, validation } from "appolo";
 import { LangaugeModel } from "./langaugeModel";
 import { LangaugeManager } from "../../managers/langaugeManager";
-import { OutputFormat } from "../../common/enums";
+import { OutputFormatContentType } from "../../common/enums";
 
 @controller()
 export class LangaugeController extends Controller {
@@ -14,22 +14,8 @@ export class LangaugeController extends Controller {
 
         const { owner, repo, ...rest } = model;
 
-        res.setHeader("Content-Type", this.getContentType(model.output));
+        res.setHeader("Content-Type", OutputFormatContentType[model.output]);
 
         return this.langaugeManager.generate(owner, repo, rest);
-    }
-
-    private getContentType(output: OutputFormat): string {
-        switch (output) {
-            case OutputFormat.JPEG:
-                return "image/jpeg";
-            case OutputFormat.TIFF:
-                return "image/tiff";
-            case OutputFormat.WEBP:
-                return "image/webp";
-            case OutputFormat.PNG:
-            default:
-                return "image/png";
-        }
     }
 }

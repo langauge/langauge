@@ -8,3 +8,10 @@ export enum OutputFormat {
     WEBP = "webp",
     TIFF = "tiff"
 }
+
+export const OutputFormatContentType = {
+    [OutputFormat.JPEG]: "image/jpeg",
+    [OutputFormat.TIFF]: "image/tiff",
+    [OutputFormat.WEBP]: "image/webp",
+    [OutputFormat.PNG]: "image/png"
+};
