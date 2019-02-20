@@ -7,6 +7,7 @@ LANGAUGE.IO &middot; <a href="https://github.com/langauge/langauge/blob/master/L
 <h3 align="center">
 🎨 Stylize your docs with your used programming languages.
 </h3>
+<br/>
 <p align="center">
 <img title="Langauge" src="https://badge.langauge.io/langauge/langauge" />
 </p>
