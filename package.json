@@ -32,7 +32,8 @@
   },
   "homepage": "https://github.com/langauge/langauge#readme",
   "dependencies": {
-    "@appolo/http": "0.0.2",
+    "@appolo/cache": "0.0.3",
+    "@appolo/http": "0.0.3",
     "@appolo/logger": "0.0.14",
     "appolo": "6.0.59",
     "handlebars": "4.1.0",

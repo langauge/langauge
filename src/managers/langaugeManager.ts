@@ -1,11 +1,16 @@
-import { singleton, define, inject, injectAliasFactory, cache } from "appolo";
+import { singleton, define, inject, injectAliasFactory } from "appolo";
 import { ILogger } from "@appolo/logger";
+import { cache } from "@appolo/cache";
+import * as zlib from "zlib";
+import { promisify } from "util";
 import { GaugeType, OutputFormat } from "../common/enums";
 import { GithubService } from "../services/githubService";
 import { IRenderer } from "../renderers/baseRenderer";
 import { IDictionary } from "../common/interfaces";
 import { TEN_MINUTES_IN_MILLISECONDS } from "../common/constants";
 import * as _ from "lodash";
+
+const gzip = promisify<Buffer, Buffer>(zlib.gzip);
 
 export interface ILangaugeOptions {
     type: GaugeType;
@@ -16,10 +21,6 @@ export interface ILangaugeOptions {
     scale: number;
 }
 
-function getCacheKeyResolver(owner: string, repo: string, options: ILangaugeOptions): string {
-    return `${owner}/${repo}/${JSON.stringify(options)}`;
-}
-
 @define()
 @singleton()
 export class LangaugeManager {
@@ -28,7 +29,7 @@ export class LangaugeManager {
     @inject() private githubService: GithubService;
     @injectAliasFactory("IRenderer", "TYPE") private rendererCreators: { [index: string]: (options: ILangaugeOptions, totalBytes: number, languagesBytes: IDictionary<number>) => IRenderer };
 
-    @cache({ maxAge: TEN_MINUTES_IN_MILLISECONDS, resolver: getCacheKeyResolver })
+    @cache({ maxAge: TEN_MINUTES_IN_MILLISECONDS, multi: true })
     public async generate(owner: string, repo: string, options: ILangaugeOptions): Promise<Buffer> {
         try {
 
@@ -46,7 +47,7 @@ export class LangaugeManager {
 
             const bitmapBuffer = await renderer.render();
 
-            return bitmapBuffer;
+            return await gzip(bitmapBuffer);
 
         } catch (err) {
 

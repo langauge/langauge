@@ -15,6 +15,7 @@ export class LangaugeController extends Controller {
         const { owner, repo, ...rest } = model;
 
         res.setHeader("Content-Type", OutputFormatContentType[model.output]);
+        res.setHeader("Content-Encoding", "gzip");
 
         return this.langaugeManager.generate(owner, repo, rest);
     }
