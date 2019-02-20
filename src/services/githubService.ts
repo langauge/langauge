@@ -3,13 +3,17 @@ import { HttpService, IResponse } from "@appolo/http";
 import { IDictionary } from "../common/interfaces";
 import { TEN_MINUTES_IN_MILLISECONDS } from "../common/constants";
 
+function getCacheKeyResolver(owner: string, repo: string): string {
+    return `${owner}/${repo}`;
+}
+
 @define()
 @singleton()
 export class GithubService {
 
     @inject() private httpService: HttpService;
 
-    @cache({ maxAge: TEN_MINUTES_IN_MILLISECONDS })
+    @cache({ maxAge: TEN_MINUTES_IN_MILLISECONDS, resolver: getCacheKeyResolver })
     public async getRepositoryLanguages(owner: string, repo: string): Promise<IDictionary<number>> {
 
         const response = await this.makeRequest("get", `repos/${owner}/${repo}/languages`);
