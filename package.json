@@ -1,7 +1,7 @@
 {
   "name": "langauge",
   "version": "1.0.0",
-  "description": "",
+  "description": "🎨 Stylize your docs with your used programming languages.",
   "private": true,
   "scripts": {
     "start": "node app --production",
