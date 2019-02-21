@@ -1,6 +1,7 @@
 import { RouteModel, validationParam, validator } from "appolo";
 import { enumValues } from "../../common/utils";
 import { GaugeType, OutputFormat } from "../../common/enums";
+import { TEN_MINUTES_IN_SECONDS } from "../../common/constants";
 
 export class LangaugeModel extends RouteModel {
 
@@ -9,6 +10,9 @@ export class LangaugeModel extends RouteModel {
 
     @validationParam(validator.string().required())
     repo: string;
+
+    @validationParam(validator.number().min(1).optional().default(TEN_MINUTES_IN_SECONDS))
+    maxAge: number;
 
     @validationParam(validator.string().valid(enumValues(GaugeType)).optional().default(GaugeType.Solid))
     type: GaugeType;
