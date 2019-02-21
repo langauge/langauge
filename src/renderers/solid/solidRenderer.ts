@@ -24,7 +24,7 @@ export class SolidRenderer extends BaseRenderer {
 
         const languages = this.hydrateRendererLanguages()
             , totalLanguages = languages.length
-            , [width, height] = this.calculageCanvasSize(totalLanguages)
+            , [width, height] = this.calculateCanvasSize(totalLanguages)
             , destWidth = width * this.options.scale
             , destHeight = height * this.options.scale
             , dpi = DEFAULT_DPI * destWidth / width
@@ -34,7 +34,7 @@ export class SolidRenderer extends BaseRenderer {
             .resize(destWidth, destHeight);
     }
 
-    private calculageCanvasSize(languagesCount: number): [number, number] {
+    private calculateCanvasSize(languagesCount: number): [number, number] {
         return [
             this.options.columns * GAUGE_WIDTH,
             Math.ceil(languagesCount / this.options.columns) * GAUGE_HEIGHT
