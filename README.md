@@ -75,6 +75,12 @@ Scale the result size.
 
 **NOTE!** There is a regression in `libsvg` pacakge, The `scale` option is not stable.
 
+#### maxAge
+
+Type: `number`, default: `600` (10 minutes)
+
+Maximum age in seconds for the `Cache-Control` header
+
 ### Example:
 
 `<img title="Langauge" src="https://badge.langauge.io/langauge/langauge?columns=2&colors=false" />`
