@@ -1,16 +1,12 @@
 import { singleton, define, inject, injectAliasFactory } from "appolo";
 import { ILogger } from "@appolo/logger";
 import { cache } from "@appolo/cache";
-import * as zlib from "zlib";
-import { promisify } from "util";
 import { GaugeType, OutputFormat } from "../common/enums";
 import { GithubService } from "../services/githubService";
 import { IRenderer } from "../renderers/baseRenderer";
 import { IDictionary } from "../common/interfaces";
 import { TEN_MINUTES_IN_MILLISECONDS } from "../common/constants";
 import * as _ from "lodash";
-
-const gzip = promisify<Buffer, Buffer>(zlib.gzip);
 
 export interface ILangaugeOptions {
     type: GaugeType;
@@ -45,9 +41,7 @@ export class LangaugeManager {
 
             const renderer = createRenderer(options, totalBytes, languages);
 
-            const bitmapBuffer = await renderer.render();
-
-            return await gzip(bitmapBuffer);
+            return await renderer.render();
 
         } catch (err) {
 

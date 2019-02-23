@@ -2,6 +2,10 @@ import { controller, Controller, inject, get, IRequest, IResponse, validation } 
 import { LangaugeModel } from "./langaugeModel";
 import { LangaugeManager } from "../../managers/langaugeManager";
 import { OutputFormatContentType } from "../../common/enums";
+import { promisify } from "util";
+import * as zlib from "zlib";
+
+const gzip = promisify<Buffer, Buffer>(zlib.gzip);
 
 @controller()
 export class LangaugeController extends Controller {
@@ -18,6 +22,8 @@ export class LangaugeController extends Controller {
         res.setHeader("Content-Encoding", "gzip");
         res.setHeader("Cache-Control", `max-age=${maxAge}`);
 
-        return this.langaugeManager.generate(owner, repo, rest);
+        const bitmapBuffer = await this.langaugeManager.generate(owner, repo, rest);
+
+        return gzip(bitmapBuffer);
     }
 }
