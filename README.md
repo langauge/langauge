@@ -14,6 +14,10 @@ LANGAUGE.IO &middot; <a href="https://github.com/langauge/langauge/blob/master/L
 
 ---
 
+### How it works
+
+Read this [medium blog post](https://medium.com/@udidu/how-i-built-my-markdown-badges-service-3d9ec8bd168) to learn how I built this service, from fetching the data and finding the colors to converting SVG into dynamic images.
+
 ### Usage
 
 Add Langauge to your README or Website
