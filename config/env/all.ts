@@ -3,5 +3,7 @@ module.exports = {
 
     port: 6060,
 
-    redis: process.env.REDIS
+    redis: process.env.REDIS,
+
+    githubToken: process.env.GITHUB_TOKEN
 };

@@ -1,5 +1,5 @@
-import { controller, Controller, inject, get, IRequest, IResponse, validation } from "appolo";
-import { LangaugeModel } from "./langaugeModel";
+import { controller, Controller, inject, get, IRequest, IResponse, validation, del } from "appolo";
+import { LangaugeModel, PurgeLangaugeModel } from "./langaugeModel";
 import { LangaugeManager } from "../../managers/langaugeManager";
 import { OutputFormatContentType } from "../../common/enums";
 import { promisify } from "util";
@@ -25,5 +25,14 @@ export class LangaugeController extends Controller {
         const bitmapBuffer = await this.langaugeManager.generate(owner, repo, rest);
 
         return gzip(bitmapBuffer);
+    }
+
+    @del("/:owner/:repo")
+    @validation(PurgeLangaugeModel)
+    public async purge(req: IRequest, res: IResponse, model: PurgeLangaugeModel) {
+
+        const { owner, repo } = model;
+
+        res.status(200).end();
     }
 }

@@ -32,3 +32,11 @@ export class LangaugeModel extends RouteModel {
     @validationParam(validator.number().min(0.1).optional().default(1))
     scale: number;
 }
+
+export class PurgeLangaugeModel extends RouteModel {
+    @validationParam(validator.string().required())
+    owner: string;
+
+    @validationParam(validator.string().required())
+    repo: string;
+}

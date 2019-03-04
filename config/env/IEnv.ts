@@ -3,4 +3,5 @@ export default interface IEnv {
     name: string;
     port: number;
     redis: string;
+    githubToken: string;
 }
