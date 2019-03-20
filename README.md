@@ -77,8 +77,6 @@ Type: `number`, default: `1`
 
 Scale the result size.
 
-**NOTE!** There is a regression in `libsvg` pacakge, The `scale` option is not stable.
-
 #### maxAge
 
 Type: `number`, default: `600` (10 minutes)
