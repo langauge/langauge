@@ -9,7 +9,7 @@ LANGAUGE.IO &middot; <a href="https://github.com/langauge/langauge/blob/master/L
 </h3>
 <br/>
 <p align="center">
-<img title="Langauge" src="https://badge.langauge.io/langauge/langauge" />
+<img title="Langauge" src="http://badge.langauge.io/langauge/langauge" />
 </p>
 
 ---
