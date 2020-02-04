@@ -25,7 +25,6 @@ export class LangaugeManager {
     @inject() private githubService: GithubService;
     @injectAliasFactory("IRenderer", "TYPE") private rendererCreators: { [index: string]: (options: ILangaugeOptions, totalBytes: number, languagesBytes: IDictionary<number>) => IRenderer };
 
-    @cache({ maxAge: TEN_MINUTES_IN_MILLISECONDS, multi: true })
     public async generate(owner: string, repo: string, options: ILangaugeOptions): Promise<Buffer> {
         try {
 
