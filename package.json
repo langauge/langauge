@@ -1,7 +1,7 @@
 {
   "name": "langauge",
   "version": "1.0.0",
-  "description": "🎨 Stylize your docs with your used programming languages.",
+  "description": "🎨 Stylize your readme files with colorful gauges",
   "private": true,
   "scripts": {
     "start": "node app --production",
