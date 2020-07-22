@@ -5,7 +5,7 @@
 LANGAUGE.IO &middot; <a href="https://github.com/langauge/langauge/blob/master/LICENSE"><img title="License" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
 </h2>
 <h3 align="center">
-🎨 Stylize your docs with your used programming languages.
+🎨 Stylize your readme files with colorful gauges
 </h3>
 <br/>
 <p align="center">
