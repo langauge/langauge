@@ -36,7 +36,7 @@
     "@appolo/http": "0.0.3",
     "@appolo/logger": "0.0.14",
     "appolo": "6.0.59",
-    "handlebars": "4.3.5",
+    "handlebars": "4.7.6",
     "lodash": "4.17.19",
     "sharp": "0.22.0",
     "tslib": "1.9.3",
