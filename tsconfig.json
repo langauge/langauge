@@ -10,13 +10,13 @@
         "sourceMap": true,
         "experimentalDecorators": true,
         "moduleResolution": "node",
-        "allowJs": true,
+        "allowJs": false,
         "preserveConstEnums": true
     },
     "exclude": [
-        "node_modules",
-        "scripts",
-        "jest.config.js",
-        "data/languages.js"
+        "./node_modules",
+        "./scripts",
+        "./jest.config.js",
+        "./data/languages.js"
     ]
 }
