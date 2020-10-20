@@ -8,8 +8,7 @@
     "tsc": "tsc",
     "tsc:watch": "tsc -w",
     "build": "npm run tsc",
-    "fetch:langs": "./scripts/fetch_languages",
-    "postinstall": "./scripts/postinstall.sh"
+    "fetch:langs": "./scripts/fetch_languages"
   },
   "repository": {
     "type": "git",

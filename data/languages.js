@@ -10,12 +10,22 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 0
     },
+    "4D": {
+        "type": "programming",
+        "extensions": [
+            ".4dm"
+        ],
+        "tm_scope": "source.4dm",
+        "ace_mode": "text",
+        "language_id": 577529595
+    },
     "ABAP": {
         "type": "programming",
         "color": "#E8274B",
         "extensions": [
             ".abap"
         ],
+        "tm_scope": "source.abap",
         "ace_mode": "abap",
         "language_id": 1
     },
@@ -44,6 +54,16 @@ module.exports = {
         "codemirror_mime_type": "text/x-c++src",
         "language_id": 2
     },
+    "AL": {
+        "type": "programming",
+        "color": "#3AA2B5",
+        "extensions": [
+            ".al"
+        ],
+        "tm_scope": "source.al",
+        "ace_mode": "text",
+        "language_id": 658971832
+    },
     "AMPL": {
         "type": "programming",
         "color": "#E6EFBB",
@@ -61,6 +81,7 @@ module.exports = {
         "extensions": [
             ".g4"
         ],
+        "tm_scope": "source.antlr",
         "ace_mode": "text",
         "language_id": 4
     },
@@ -92,6 +113,16 @@ module.exports = {
         "codemirror_mime_type": "text/apl",
         "language_id": 6
     },
+    "ASL": {
+        "type": "programming",
+        "ace_mode": "text",
+        "extensions": [
+            ".asl",
+            ".dsl"
+        ],
+        "tm_scope": "source.asl",
+        "language_id": 124996147
+    },
     "ASN.1": {
         "type": "data",
         "extensions": [
@@ -104,16 +135,15 @@ module.exports = {
         "codemirror_mime_type": "text/x-ttcn-asn",
         "language_id": 7
     },
-    "ASP": {
+    "ASP.NET": {
         "type": "programming",
-        "color": "#6a40fd",
         "tm_scope": "text.html.asp",
+        "color": "#9400ff",
         "aliases": [
             "aspx",
             "aspx-vb"
         ],
         "extensions": [
-            ".asp",
             ".asax",
             ".ascx",
             ".ashx",
@@ -124,7 +154,7 @@ module.exports = {
         "ace_mode": "text",
         "codemirror_mode": "htmlembedded",
         "codemirror_mime_type": "application/x-aspx",
-        "language_id": 8
+        "language_id": 564186416
     },
     "ATS": {
         "type": "programming",
@@ -168,6 +198,7 @@ module.exports = {
             "ada95",
             "ada2005"
         ],
+        "tm_scope": "source.ada",
         "ace_mode": "ada",
         "language_id": 11
     },
@@ -192,6 +223,7 @@ module.exports = {
         "extensions": [
             ".agda"
         ],
+        "tm_scope": "source.agda",
         "ace_mode": "text",
         "language_id": 12
     },
@@ -201,6 +233,7 @@ module.exports = {
         "extensions": [
             ".als"
         ],
+        "tm_scope": "source.alloy",
         "ace_mode": "text",
         "language_id": 13
     },
@@ -219,6 +252,21 @@ module.exports = {
         "codemirror_mode": "shell",
         "codemirror_mime_type": "text/x-sh",
         "language_id": 14
+    },
+    "Altium Designer": {
+        "type": "data",
+        "aliases": [
+            "altium"
+        ],
+        "extensions": [
+            ".OutJob",
+            ".PcbDoc",
+            ".PrjPCB",
+            ".SchDoc"
+        ],
+        "tm_scope": "source.ini",
+        "ace_mode": "ini",
+        "language_id": 187772328
     },
     "AngelScript": {
         "type": "programming",
@@ -266,6 +314,7 @@ module.exports = {
     },
     "Apex": {
         "type": "programming",
+        "color": "#1797c0",
         "extensions": [
             ".cls"
         ],
@@ -277,6 +326,7 @@ module.exports = {
     },
     "Apollo Guidance Computer": {
         "type": "programming",
+        "color": "#0B3D91",
         "group": "Assembly",
         "extensions": [
             ".agc"
@@ -297,6 +347,7 @@ module.exports = {
         "interpreters": [
             "osascript"
         ],
+        "tm_scope": "source.applescript",
         "ace_mode": "applescript",
         "color": "#101F1F",
         "language_id": 19
@@ -343,6 +394,7 @@ module.exports = {
         "extensions": [
             ".asm",
             ".a51",
+            ".i",
             ".inc",
             ".nasm"
         ],
@@ -352,7 +404,7 @@ module.exports = {
     },
     "Asymptote": {
         "type": "programming",
-        "color": "#4a0c0c",
+        "color": "#ff0000",
         "extensions": [
             ".asy"
         ],
@@ -403,6 +455,15 @@ module.exports = {
         "ace_mode": "autohotkey",
         "language_id": 27
     },
+    "Avro IDL": {
+        "type": "data",
+        "extensions": [
+            ".avdl"
+        ],
+        "tm_scope": "source.avro",
+        "ace_mode": "text",
+        "language_id": 785497837
+    },
     "Awk": {
         "type": "programming",
         "extensions": [
@@ -418,6 +479,7 @@ module.exports = {
             "mawk",
             "nawk"
         ],
+        "tm_scope": "source.awk",
         "ace_mode": "text",
         "language_id": 28
     },
@@ -453,13 +515,28 @@ module.exports = {
         "extensions": [
             ".befunge"
         ],
+        "tm_scope": "source.befunge",
         "ace_mode": "text",
         "language_id": 30
     },
+    "BibTeX": {
+        "type": "markup",
+        "group": "TeX",
+        "extensions": [
+            ".bib",
+            ".bibtex"
+        ],
+        "tm_scope": "text.bibtex",
+        "ace_mode": "tex",
+        "codemirror_mode": "stex",
+        "codemirror_mime_type": "text/x-stex",
+        "language_id": 982188347
+    },
     "Bison": {
         "type": "programming",
+        "color": "#6A463F",
         "group": "Yacc",
-        "tm_scope": "source.bison",
+        "tm_scope": "source.yacc",
         "extensions": [
             ".bison"
         ],
@@ -477,7 +554,7 @@ module.exports = {
     },
     "Blade": {
         "type": "markup",
-        "group": "HTML",
+        "color": "#f7523f",
         "extensions": [
             ".blade",
             ".blade.php"
@@ -511,6 +588,7 @@ module.exports = {
         "aliases": [
             "bmax"
         ],
+        "tm_scope": "source.blitzmax",
         "ace_mode": "text",
         "language_id": 35
     },
@@ -555,14 +633,6 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 39
     },
-    "Bro": {
-        "type": "programming",
-        "extensions": [
-            ".bro"
-        ],
-        "ace_mode": "text",
-        "language_id": 40
-    },
     "C": {
         "type": "programming",
         "color": "#555555",
@@ -575,6 +645,7 @@ module.exports = {
         "interpreters": [
             "tcc"
         ],
+        "tm_scope": "source.c",
         "ace_mode": "c_cpp",
         "codemirror_mode": "clike",
         "codemirror_mime_type": "text/x-csrc",
@@ -593,12 +664,14 @@ module.exports = {
         "extensions": [
             ".cs",
             ".cake",
-            ".csx"
+            ".csx",
+            ".linq"
         ],
         "language_id": 42
     },
     "C++": {
         "type": "programming",
+        "tm_scope": "source.c++",
         "ace_mode": "c_cpp",
         "codemirror_mode": "clike",
         "codemirror_mime_type": "text/x-c++src",
@@ -669,6 +742,7 @@ module.exports = {
         "filenames": [
             "CMakeLists.txt"
         ],
+        "tm_scope": "source.cmake",
         "ace_mode": "text",
         "codemirror_mode": "cmake",
         "codemirror_mime_type": "text/x-cmake",
@@ -683,6 +757,7 @@ module.exports = {
             ".cobol",
             ".cpy"
         ],
+        "tm_scope": "source.cobol",
         "ace_mode": "cobol",
         "codemirror_mode": "cobol",
         "codemirror_mime_type": "text/x-cobol",
@@ -701,6 +776,7 @@ module.exports = {
     },
     "CSON": {
         "type": "data",
+        "color": "#244776",
         "tm_scope": "source.coffee",
         "ace_mode": "coffee",
         "codemirror_mode": "coffeescript",
@@ -739,6 +815,24 @@ module.exports = {
         "tm_scope": "none",
         "ace_mode": "text",
         "language_id": 657332628
+    },
+    "Cabal Config": {
+        "type": "data",
+        "aliases": [
+            "Cabal"
+        ],
+        "extensions": [
+            ".cabal"
+        ],
+        "filenames": [
+            "cabal.config",
+            "cabal.project"
+        ],
+        "ace_mode": "haskell",
+        "codemirror_mode": "haskell",
+        "codemirror_mime_type": "text/x-haskell",
+        "tm_scope": "source.cabal",
+        "language_id": 677095381
     },
     "Cap'n Proto": {
         "type": "programming",
@@ -780,6 +874,7 @@ module.exports = {
         "extensions": [
             ".chpl"
         ],
+        "tm_scope": "source.chapel",
         "ace_mode": "text",
         "language_id": 55
     },
@@ -806,6 +901,7 @@ module.exports = {
     "Cirru": {
         "type": "programming",
         "color": "#ccccff",
+        "tm_scope": "source.cirru",
         "ace_mode": "cirru",
         "extensions": [
             ".cirru"
@@ -821,6 +917,19 @@ module.exports = {
         ],
         "tm_scope": "source.clarion",
         "language_id": 59
+    },
+    "Classic ASP": {
+        "type": "programming",
+        "color": "#6a40fd",
+        "tm_scope": "text.html.asp",
+        "aliases": [
+            "asp"
+        ],
+        "extensions": [
+            ".asp"
+        ],
+        "ace_mode": "text",
+        "language_id": 8
     },
     "Clean": {
         "type": "programming",
@@ -845,6 +954,7 @@ module.exports = {
     },
     "Clojure": {
         "type": "programming",
+        "tm_scope": "source.clojure",
         "ace_mode": "clojure",
         "codemirror_mode": "clojure",
         "codemirror_mime_type": "text/x-clojure",
@@ -905,6 +1015,19 @@ module.exports = {
         ],
         "language_id": 421026389
     },
+    "CodeQL": {
+        "type": "programming",
+        "extensions": [
+            ".ql",
+            ".qll"
+        ],
+        "tm_scope": "source.ql",
+        "ace_mode": "text",
+        "language_id": 424259634,
+        "aliases": [
+            "ql"
+        ]
+    },
     "CoffeeScript": {
         "type": "programming",
         "tm_scope": "source.coffee",
@@ -949,6 +1072,7 @@ module.exports = {
     },
     "ColdFusion CFC": {
         "type": "programming",
+        "color": "#ed2cd6",
         "group": "ColdFusion",
         "ace_mode": "coldfusion",
         "aliases": [
@@ -1039,6 +1163,7 @@ module.exports = {
             ".coq",
             ".v"
         ],
+        "tm_scope": "source.coq",
         "ace_mode": "text",
         "language_id": 69
     },
@@ -1155,6 +1280,7 @@ module.exports = {
         "aliases": [
             "pyrex"
         ],
+        "tm_scope": "source.cython",
         "ace_mode": "text",
         "codemirror_mode": "python",
         "codemirror_mime_type": "text/x-cython",
@@ -1167,6 +1293,7 @@ module.exports = {
             ".d",
             ".di"
         ],
+        "tm_scope": "source.d",
         "ace_mode": "d",
         "codemirror_mode": "d",
         "codemirror_mime_type": "text/x-d",
@@ -1233,6 +1360,19 @@ module.exports = {
         "codemirror_mime_type": "text/x-csrc",
         "language_id": 85
     },
+    "Dafny": {
+        "type": "programming",
+        "color": "#FFEC25",
+        "extensions": [
+            ".dfy"
+        ],
+        "interpreters": [
+            "dafny"
+        ],
+        "tm_scope": "text.dfy.dafny",
+        "ace_mode": "text",
+        "language_id": 969323346
+    },
     "Darcs Patch": {
         "type": "data",
         "aliases": [
@@ -1255,6 +1395,7 @@ module.exports = {
         "interpreters": [
             "dart"
         ],
+        "tm_scope": "source.dart",
         "ace_mode": "dart",
         "codemirror_mode": "dart",
         "codemirror_mime_type": "application/dart",
@@ -1270,6 +1411,18 @@ module.exports = {
         "tm_scope": "source.data-weave",
         "language_id": 974514097
     },
+    "Dhall": {
+        "type": "programming",
+        "color": "#dfafff",
+        "extensions": [
+            ".dhall"
+        ],
+        "tm_scope": "source.haskell",
+        "ace_mode": "haskell",
+        "codemirror_mode": "haskell",
+        "codemirror_mime_type": "text/x-haskell",
+        "language_id": 793969321
+    },
     "Diff": {
         "type": "data",
         "extensions": [
@@ -1284,6 +1437,15 @@ module.exports = {
         "codemirror_mode": "diff",
         "codemirror_mime_type": "text/x-diff",
         "language_id": 88
+    },
+    "DirectX 3D File": {
+        "type": "data",
+        "extensions": [
+            ".x"
+        ],
+        "ace_mode": "text",
+        "tm_scope": "none",
+        "language_id": 201049282
     },
     "Dockerfile": {
         "type": "programming",
@@ -1319,6 +1481,7 @@ module.exports = {
             ".intr",
             ".lid"
         ],
+        "tm_scope": "source.dylan",
         "ace_mode": "text",
         "codemirror_mode": "dylan",
         "codemirror_mime_type": "text/x-dylan",
@@ -1373,9 +1536,12 @@ module.exports = {
     },
     "EJS": {
         "type": "markup",
+        "color": "#a91e50",
         "group": "HTML",
         "extensions": [
-            ".ejs"
+            ".ejs",
+            ".ect",
+            ".jst"
         ],
         "tm_scope": "text.html.js",
         "ace_mode": "ejs",
@@ -1439,23 +1605,39 @@ module.exports = {
         "codemirror_mime_type": "application/json",
         "language_id": 98
     },
+    "EditorConfig": {
+        "type": "data",
+        "group": "INI",
+        "filenames": [
+            ".editorconfig"
+        ],
+        "aliases": [
+            "editor-config"
+        ],
+        "ace_mode": "ini",
+        "codemirror_mode": "properties",
+        "codemirror_mime_type": "text/x-properties",
+        "tm_scope": "source.editorconfig",
+        "language_id": 96139566
+    },
     "Edje Data Collection": {
         "type": "data",
         "extensions": [
             ".edc"
         ],
-        "tm_scope": "source.json",
-        "ace_mode": "json",
-        "codemirror_mode": "javascript",
-        "codemirror_mime_type": "application/json",
+        "tm_scope": "source.c++",
+        "ace_mode": "c_cpp",
+        "codemirror_mode": "clike",
+        "codemirror_mime_type": "text/x-c++src",
         "language_id": 342840478
     },
     "Eiffel": {
         "type": "programming",
-        "color": "#946d57",
+        "color": "#4d6977",
         "extensions": [
             ".e"
         ],
+        "tm_scope": "source.eiffel",
         "ace_mode": "eiffel",
         "codemirror_mode": "eiffel",
         "codemirror_mime_type": "text/x-eiffel",
@@ -1468,6 +1650,7 @@ module.exports = {
             ".ex",
             ".exs"
         ],
+        "tm_scope": "source.elixir",
         "ace_mode": "elixir",
         "filenames": [
             "mix.lock"
@@ -1550,6 +1733,7 @@ module.exports = {
             "rebar.config.lock",
             "rebar.lock"
         ],
+        "tm_scope": "source.erlang",
         "ace_mode": "erlang",
         "codemirror_mode": "erlang",
         "codemirror_mime_type": "text/x-erlang",
@@ -1622,6 +1806,7 @@ module.exports = {
             ".factor-boot-rc",
             ".factor-rc"
         ],
+        "tm_scope": "source.factor",
         "ace_mode": "text",
         "codemirror_mode": "factor",
         "codemirror_mime_type": "text/x-factor",
@@ -1637,6 +1822,7 @@ module.exports = {
         "filenames": [
             "Fakefile"
         ],
+        "tm_scope": "source.fancy",
         "ace_mode": "text",
         "language_id": 109
     },
@@ -1649,6 +1835,16 @@ module.exports = {
         "tm_scope": "source.fan",
         "ace_mode": "text",
         "language_id": 110
+    },
+    "Faust": {
+        "type": "programming",
+        "color": "#c37240",
+        "extensions": [
+            ".dsp"
+        ],
+        "tm_scope": "source.faust",
+        "ace_mode": "text",
+        "language_id": 622529198
     },
     "Filebench WML": {
         "type": "programming",
@@ -1692,29 +1888,42 @@ module.exports = {
             ".frt",
             ".fs"
         ],
+        "tm_scope": "source.forth",
         "ace_mode": "forth",
         "codemirror_mode": "forth",
         "codemirror_mime_type": "text/x-forth",
         "language_id": 114
     },
     "Fortran": {
+        "group": "Fortran",
         "type": "programming",
         "color": "#4d41b1",
         "extensions": [
-            ".f90",
             ".f",
-            ".f03",
-            ".f08",
             ".f77",
-            ".f95",
             ".for",
             ".fpp"
+        ],
+        "tm_scope": "source.fortran",
+        "ace_mode": "text",
+        "codemirror_mode": "fortran",
+        "codemirror_mime_type": "text/x-fortran",
+        "language_id": 107
+    },
+    "Fortran Free Form": {
+        "group": "Fortran",
+        "type": "programming",
+        "extensions": [
+            ".f90",
+            ".f03",
+            ".f08",
+            ".f95"
         ],
         "tm_scope": "source.fortran.modern",
         "ace_mode": "text",
         "codemirror_mode": "fortran",
         "codemirror_mime_type": "text/x-fortran",
-        "language_id": 107
+        "language_id": 761352333
     },
     "FreeMarker": {
         "type": "programming",
@@ -1739,16 +1948,38 @@ module.exports = {
         "ace_mode": "haskell",
         "language_id": 116
     },
+    "Futhark": {
+        "type": "programming",
+        "color": "#5f021f",
+        "extensions": [
+            ".fut"
+        ],
+        "tm_scope": "source.futhark",
+        "ace_mode": "text",
+        "language_id": 97358117
+    },
     "G-code": {
-        "type": "data",
+        "type": "programming",
+        "color": "#D08CF2",
         "extensions": [
             ".g",
+            ".cnc",
             ".gco",
             ".gcode"
         ],
         "tm_scope": "source.gcode",
         "ace_mode": "gcode",
         "language_id": 117
+    },
+    "GAML": {
+        "type": "programming",
+        "color": "#FFC766",
+        "extensions": [
+            ".gaml"
+        ],
+        "tm_scope": "none",
+        "ace_mode": "text",
+        "language_id": 290345951
     },
     "GAMS": {
         "type": "programming",
@@ -1803,6 +2034,15 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 123
     },
+    "GEDCOM": {
+        "type": "data",
+        "ace_mode": "text",
+        "extensions": [
+            ".ged"
+        ],
+        "tm_scope": "source.gedcom",
+        "language_id": 459577965
+    },
     "GLSL": {
         "type": "programming",
         "extensions": [
@@ -1815,7 +2055,9 @@ module.exports = {
             ".fshader",
             ".geo",
             ".geom",
+            ".glslf",
             ".glslv",
+            ".gs",
             ".gshader",
             ".shader",
             ".tesc",
@@ -1825,6 +2067,7 @@ module.exports = {
             ".vsh",
             ".vshader"
         ],
+        "tm_scope": "source.glsl",
         "ace_mode": "glsl",
         "language_id": 124
     },
@@ -1919,12 +2162,14 @@ module.exports = {
             ".gbp",
             ".gbs",
             ".gko",
+            ".gml",
             ".gpb",
             ".gpt",
             ".gtl",
             ".gto",
             ".gtp",
-            ".gts"
+            ".gts",
+            ".sol"
         ],
         "interpreters": [
             "gerbv",
@@ -1951,7 +2196,8 @@ module.exports = {
     "Gherkin": {
         "type": "programming",
         "extensions": [
-            ".feature"
+            ".feature",
+            ".story"
         ],
         "tm_scope": "text.gherkin.feature",
         "aliases": [
@@ -2024,12 +2270,14 @@ module.exports = {
             ".gp",
             ".gnu",
             ".gnuplot",
+            ".p",
             ".plot",
             ".plt"
         ],
         "interpreters": [
             "gnuplot"
         ],
+        "tm_scope": "source.gnuplot",
         "ace_mode": "text",
         "language_id": 131
     },
@@ -2042,6 +2290,7 @@ module.exports = {
         "extensions": [
             ".go"
         ],
+        "tm_scope": "source.go",
         "ace_mode": "golang",
         "codemirror_mode": "go",
         "codemirror_mime_type": "text/x-go",
@@ -2093,13 +2342,11 @@ module.exports = {
         "aliases": [
             "gf"
         ],
-        "wrap": false,
         "extensions": [
             ".gf"
         ],
-        "searchable": true,
-        "color": "#79aa7a",
-        "tm_scope": "source.haskell",
+        "color": "#ff0000",
+        "tm_scope": "source.gf",
         "ace_mode": "haskell",
         "codemirror_mode": "haskell",
         "codemirror_mime_type": "text/x-haskell",
@@ -2116,9 +2363,11 @@ module.exports = {
     },
     "GraphQL": {
         "type": "data",
+        "color": "#e10098",
         "extensions": [
             ".graphql",
-            ".gql"
+            ".gql",
+            ".graphqls"
         ],
         "tm_scope": "source.graphql",
         "ace_mode": "text",
@@ -2136,6 +2385,7 @@ module.exports = {
     },
     "Groovy": {
         "type": "programming",
+        "tm_scope": "source.groovy",
         "ace_mode": "groovy",
         "codemirror_mode": "groovy",
         "codemirror_mime_type": "text/x-groovy",
@@ -2186,6 +2436,7 @@ module.exports = {
         "type": "programming",
         "extensions": [
             ".hcl",
+            ".nomad",
             ".tf",
             ".tfvars",
             ".workflow"
@@ -2239,8 +2490,8 @@ module.exports = {
         "group": "HTML",
         "extensions": [
             ".jinja",
+            ".j2",
             ".jinja2",
-            ".mustache",
             ".njk"
         ],
         "aliases": [
@@ -2291,11 +2542,14 @@ module.exports = {
         "tm_scope": "text.html.erb",
         "group": "HTML",
         "aliases": [
-            "erb"
+            "erb",
+            "rhtml",
+            "html+ruby"
         ],
         "extensions": [
             ".erb",
-            ".erb.deface"
+            ".erb.deface",
+            ".rhtml"
         ],
         "ace_mode": "text",
         "codemirror_mode": "htmlembedded",
@@ -2322,7 +2576,8 @@ module.exports = {
             "razor"
         ],
         "extensions": [
-            ".cshtml"
+            ".cshtml",
+            ".razor"
         ],
         "ace_mode": "razor",
         "codemirror_mode": "htmlmixed",
@@ -2355,20 +2610,23 @@ module.exports = {
         "codemirror_mode": "php",
         "codemirror_mime_type": "application/x-httpd-php",
         "extensions": [
+            ".hack",
             ".hh",
+            ".hhi",
             ".php"
         ],
-        "tm_scope": "text.html.php",
+        "tm_scope": "source.hack",
         "color": "#878787",
         "language_id": 153
     },
     "Haml": {
-        "group": "HTML",
         "type": "markup",
+        "color": "#ece2a9",
         "extensions": [
             ".haml",
             ".haml.deface"
         ],
+        "tm_scope": "text.haml",
         "ace_mode": "haml",
         "codemirror_mode": "haml",
         "codemirror_mime_type": "text/x-haml",
@@ -2376,7 +2634,7 @@ module.exports = {
     },
     "Handlebars": {
         "type": "markup",
-        "group": "HTML",
+        "color": "#f7931e",
         "aliases": [
             "hbs",
             "htmlbars"
@@ -2404,11 +2662,15 @@ module.exports = {
         "color": "#5e5086",
         "extensions": [
             ".hs",
+            ".hs-boot",
             ".hsc"
         ],
         "interpreters": [
-            "runhaskell"
+            "runghc",
+            "runhaskell",
+            "runhugs"
         ],
+        "tm_scope": "source.haskell",
         "ace_mode": "haskell",
         "codemirror_mode": "haskell",
         "codemirror_mime_type": "text/x-haskell",
@@ -2430,12 +2692,25 @@ module.exports = {
     "HiveQL": {
         "type": "programming",
         "extensions": [
-            ".q"
+            ".q",
+            ".hql"
         ],
         "color": "#dce200",
         "tm_scope": "source.hql",
         "ace_mode": "sql",
         "language_id": 931814087
+    },
+    "HolyC": {
+        "type": "programming",
+        "color": "#ffefaf",
+        "extensions": [
+            ".hc"
+        ],
+        "tm_scope": "source.hc",
+        "ace_mode": "c_cpp",
+        "codemirror_mode": "clike",
+        "codemirror_mime_type": "text/x-csrc",
+        "language_id": 928121743
     },
     "Hy": {
         "type": "programming",
@@ -2469,6 +2744,7 @@ module.exports = {
             ".pro",
             ".dlm"
         ],
+        "tm_scope": "source.idl",
         "ace_mode": "text",
         "codemirror_mode": "idl",
         "codemirror_mime_type": "text/x-idl",
@@ -2476,6 +2752,7 @@ module.exports = {
     },
     "IGOR Pro": {
         "type": "programming",
+        "color": "#0000cc",
         "extensions": [
             ".ipf"
         ],
@@ -2483,7 +2760,7 @@ module.exports = {
             "igor",
             "igorpro"
         ],
-        "tm_scope": "none",
+        "tm_scope": "source.igor",
         "ace_mode": "text",
         "language_id": 162
     },
@@ -2492,13 +2769,13 @@ module.exports = {
         "extensions": [
             ".ini",
             ".cfg",
+            ".dof",
             ".lektorproject",
             ".prefs",
             ".pro",
             ".properties"
         ],
         "filenames": [
-            ".editorconfig",
             "buildozer.spec"
         ],
         "tm_scope": "source.ini",
@@ -2589,9 +2866,10 @@ module.exports = {
     "Inno Setup": {
         "type": "programming",
         "extensions": [
-            ".iss"
+            ".iss",
+            ".isl"
         ],
-        "tm_scope": "none",
+        "tm_scope": "source.inno",
         "ace_mode": "text",
         "language_id": 167
     },
@@ -2604,6 +2882,7 @@ module.exports = {
         "interpreters": [
             "io"
         ],
+        "tm_scope": "source.io",
         "ace_mode": "io",
         "language_id": 168
     },
@@ -2616,6 +2895,7 @@ module.exports = {
         "interpreters": [
             "ioke"
         ],
+        "tm_scope": "source.ioke",
         "ace_mode": "text",
         "language_id": 169
     },
@@ -2654,6 +2934,7 @@ module.exports = {
     },
     "JFlex": {
         "type": "programming",
+        "color": "#DBCA00",
         "group": "Lex",
         "extensions": [
             ".flex",
@@ -2679,6 +2960,7 @@ module.exports = {
             ".ice",
             ".JSON-tmLanguage",
             ".jsonl",
+            ".mcmeta",
             ".tfstate",
             ".tfstate.backup",
             ".topojson",
@@ -2709,6 +2991,7 @@ module.exports = {
             "jsonc"
         ],
         "extensions": [
+            ".jsonc",
             ".sublime-build",
             ".sublime-commands",
             ".sublime-completions",
@@ -2730,7 +3013,9 @@ module.exports = {
             ".jshintrc",
             ".jslintrc",
             "jsconfig.json",
-            "tsconfig.json"
+            "language-configuration.json",
+            "tsconfig.json",
+            "tslint.json"
         ],
         "language_id": 423
     },
@@ -2791,6 +3076,7 @@ module.exports = {
     },
     "Java": {
         "type": "programming",
+        "tm_scope": "source.java",
         "ace_mode": "java",
         "codemirror_mode": "clike",
         "codemirror_mime_type": "text/x-java",
@@ -2841,6 +3127,7 @@ module.exports = {
             ".js",
             "._js",
             ".bones",
+            ".cjs",
             ".es",
             ".es6",
             ".frag",
@@ -2863,9 +3150,30 @@ module.exports = {
             "Jakefile"
         ],
         "interpreters": [
-            "node"
+            "chakra",
+            "d8",
+            "gjs",
+            "js",
+            "node",
+            "nodejs",
+            "qjs",
+            "rhino",
+            "v8",
+            "v8-shell"
         ],
         "language_id": 183
+    },
+    "JavaScript+ERB": {
+        "type": "programming",
+        "tm_scope": "source.js",
+        "group": "JavaScript",
+        "extensions": [
+            ".js.erb"
+        ],
+        "ace_mode": "javascript",
+        "codemirror_mode": "javascript",
+        "codemirror_mime_type": "application/javascript",
+        "language_id": 914318960
     },
     "Jison": {
         "type": "programming",
@@ -2901,6 +3209,17 @@ module.exports = {
         "tm_scope": "source.jolie",
         "language_id": 998078858
     },
+    "Jsonnet": {
+        "color": "#0064bd",
+        "type": "programming",
+        "ace_mode": "text",
+        "extensions": [
+            ".jsonnet",
+            ".libsonnet"
+        ],
+        "tm_scope": "source.jsonnet",
+        "language_id": 664885656
+    },
     "Julia": {
         "type": "programming",
         "extensions": [
@@ -2910,6 +3229,7 @@ module.exports = {
             "julia"
         ],
         "color": "#a270ba",
+        "tm_scope": "source.julia",
         "ace_mode": "julia",
         "codemirror_mode": "julia",
         "codemirror_mime_type": "text/x-julia",
@@ -2942,6 +3262,21 @@ module.exports = {
         "tm_scope": "none",
         "ace_mode": "text",
         "language_id": 186
+    },
+    "Kaitai Struct": {
+        "type": "programming",
+        "aliases": [
+            "ksy"
+        ],
+        "ace_mode": "yaml",
+        "codemirror_mode": "yaml",
+        "codemirror_mime_type": "text/x-yaml",
+        "color": "#773b37",
+        "extensions": [
+            ".ksy"
+        ],
+        "tm_scope": "source.yaml",
+        "language_id": 818804755
     },
     "KiCad Layout": {
         "type": "data",
@@ -3025,6 +3360,7 @@ module.exports = {
         "extensions": [
             ".ll"
         ],
+        "tm_scope": "source.llvm",
         "ace_mode": "text",
         "color": "#185619",
         "language_id": 191
@@ -3041,6 +3377,7 @@ module.exports = {
     },
     "LSL": {
         "type": "programming",
+        "tm_scope": "source.lsl",
         "ace_mode": "lsl",
         "extensions": [
             ".lsl",
@@ -3074,6 +3411,19 @@ module.exports = {
         "codemirror_mime_type": "text/xml",
         "language_id": 194
     },
+    "Lark": {
+        "type": "data",
+        "group": "EBNF",
+        "color": "#0b130f",
+        "extensions": [
+            ".lark"
+        ],
+        "tm_scope": "source.lark",
+        "ace_mode": "text",
+        "codemirror_mode": "ebnf",
+        "codemirror_mime_type": "text/x-ebnf",
+        "language_id": 758480799
+    },
     "Lasso": {
         "type": "programming",
         "color": "#999999",
@@ -3081,8 +3431,7 @@ module.exports = {
             ".lasso",
             ".las",
             ".lasso8",
-            ".lasso9",
-            ".ldml"
+            ".lasso9"
         ],
         "tm_scope": "file.lasso",
         "aliases": [
@@ -3093,7 +3442,7 @@ module.exports = {
     },
     "Latte": {
         "type": "markup",
-        "group": "HTML",
+        "color": "#f2a542",
         "extensions": [
             ".latte"
         ],
@@ -3109,12 +3458,13 @@ module.exports = {
             ".lean",
             ".hlean"
         ],
+        "tm_scope": "source.lean",
         "ace_mode": "text",
         "language_id": 197
     },
     "Less": {
         "type": "markup",
-        "group": "CSS",
+        "color": "#1d365d",
         "extensions": [
             ".less"
         ],
@@ -3134,7 +3484,11 @@ module.exports = {
             ".l",
             ".lex"
         ],
-        "tm_scope": "none",
+        "filenames": [
+            "Lexer.x",
+            "lexer.x"
+        ],
+        "tm_scope": "source.lex",
         "ace_mode": "text",
         "language_id": 199
     },
@@ -3144,6 +3498,7 @@ module.exports = {
             ".ly",
             ".ily"
         ],
+        "tm_scope": "source.lilypond",
         "ace_mode": "text",
         "language_id": 200
     },
@@ -3209,7 +3564,8 @@ module.exports = {
             "litcoffee"
         ],
         "extensions": [
-            ".litcoffee"
+            ".litcoffee",
+            ".coffee.md"
         ],
         "language_id": 206
     },
@@ -3243,6 +3599,7 @@ module.exports = {
         "filenames": [
             "Slakefile"
         ],
+        "tm_scope": "source.livescript",
         "ace_mode": "livescript",
         "codemirror_mode": "livescript",
         "codemirror_mime_type": "text/x-livescript",
@@ -3265,6 +3622,7 @@ module.exports = {
             ".lgt",
             ".logtalk"
         ],
+        "tm_scope": "source.logtalk",
         "ace_mode": "text",
         "language_id": 210
     },
@@ -3293,6 +3651,7 @@ module.exports = {
     },
     "Lua": {
         "type": "programming",
+        "tm_scope": "source.lua",
         "ace_mode": "lua",
         "codemirror_mode": "lua",
         "codemirror_mime_type": "text/x-lua",
@@ -3304,7 +3663,11 @@ module.exports = {
             ".p8",
             ".pd_lua",
             ".rbxs",
+            ".rockspec",
             ".wlua"
+        ],
+        "filenames": [
+            ".luacheckrc"
         ],
         "interpreters": [
             "lua"
@@ -3331,7 +3694,7 @@ module.exports = {
         "extensions": [
             ".m4"
         ],
-        "tm_scope": "none",
+        "tm_scope": "source.m4",
         "ace_mode": "text",
         "language_id": 215
     },
@@ -3347,7 +3710,7 @@ module.exports = {
         "filenames": [
             "configure.ac"
         ],
-        "tm_scope": "none",
+        "tm_scope": "source.m4",
         "ace_mode": "text",
         "language_id": 216
     },
@@ -3361,6 +3724,7 @@ module.exports = {
             ".matlab",
             ".m"
         ],
+        "tm_scope": "source.matlab",
         "ace_mode": "matlab",
         "codemirror_mode": "octave",
         "codemirror_mime_type": "text/x-octave",
@@ -3376,6 +3740,16 @@ module.exports = {
         "tm_scope": "source.maxscript",
         "ace_mode": "text",
         "language_id": 217
+    },
+    "MLIR": {
+        "type": "programming",
+        "color": "#5EC8DB",
+        "extensions": [
+            ".mlir"
+        ],
+        "tm_scope": "source.mlir",
+        "ace_mode": "text",
+        "language_id": 448253929
     },
     "MQL4": {
         "type": "programming",
@@ -3424,6 +3798,22 @@ module.exports = {
         "codemirror_mime_type": "text/x-forth",
         "language_id": 219
     },
+    "Macaulay2": {
+        "type": "programming",
+        "extensions": [
+            ".m2"
+        ],
+        "aliases": [
+            "m2"
+        ],
+        "interpreters": [
+            "M2"
+        ],
+        "ace_mode": "text",
+        "tm_scope": "source.m2",
+        "color": "#d8ffff",
+        "language_id": 34167825
+    },
     "Makefile": {
         "type": "programming",
         "color": "#427819",
@@ -3457,6 +3847,7 @@ module.exports = {
         "interpreters": [
             "make"
         ],
+        "tm_scope": "source.makefile",
         "ace_mode": "makefile",
         "codemirror_mode": "cmake",
         "codemirror_mime_type": "text/x-cmake",
@@ -3474,6 +3865,7 @@ module.exports = {
     },
     "Markdown": {
         "type": "prose",
+        "color": "#083fa1",
         "aliases": [
             "pandoc"
         ],
@@ -3486,6 +3878,7 @@ module.exports = {
             ".markdown",
             ".mdown",
             ".mdwn",
+            ".mdx",
             ".mkd",
             ".mkdn",
             ".mkdown",
@@ -3499,8 +3892,8 @@ module.exports = {
         "language_id": 222
     },
     "Marko": {
-        "group": "HTML",
         "type": "markup",
+        "color": "#42bff2",
         "tm_scope": "text.marko",
         "extensions": [
             ".marko"
@@ -3539,6 +3932,7 @@ module.exports = {
         "aliases": [
             "mma"
         ],
+        "tm_scope": "source.mathematica",
         "ace_mode": "text",
         "codemirror_mode": "mathematica",
         "codemirror_mime_type": "text/x-mathematica",
@@ -3622,6 +4016,15 @@ module.exports = {
         "codemirror_mode": "clike",
         "codemirror_mime_type": "text/x-c++src",
         "language_id": 230
+    },
+    "Microsoft Developer Studio Project": {
+        "type": "data",
+        "extensions": [
+            ".dsp"
+        ],
+        "tm_scope": "none",
+        "ace_mode": "text",
+        "language_id": 800983837
     },
     "MiniD": {
         "type": "programming",
@@ -3721,8 +4124,52 @@ module.exports = {
         "interpreters": [
             "moon"
         ],
+        "tm_scope": "source.moonscript",
         "ace_mode": "text",
         "language_id": 238
+    },
+    "Motorola 68K Assembly": {
+        "type": "programming",
+        "group": "Assembly",
+        "aliases": [
+            "m68k"
+        ],
+        "extensions": [
+            ".asm",
+            ".i",
+            ".inc",
+            ".s",
+            ".x68"
+        ],
+        "tm_scope": "source.m68k",
+        "ace_mode": "assembly_x86",
+        "language_id": 477582706
+    },
+    "Muse": {
+        "type": "prose",
+        "extensions": [
+            ".muse"
+        ],
+        "tm_scope": "text.muse",
+        "ace_mode": "text",
+        "wrap": true,
+        "language_id": 474864066,
+        "aliases": [
+            "amusewiki",
+            "emacs muse"
+        ]
+    },
+    "Mustache": {
+        "type": "markup",
+        "group": "HTML",
+        "extensions": [
+            ".mustache"
+        ],
+        "tm_scope": "text.html.smarty",
+        "ace_mode": "smarty",
+        "codemirror_mode": "smarty",
+        "codemirror_mime_type": "text/x-smarty",
+        "language_id": 638334590
     },
     "Myghty": {
         "type": "programming",
@@ -3732,6 +4179,16 @@ module.exports = {
         "tm_scope": "none",
         "ace_mode": "text",
         "language_id": 239
+    },
+    "NASL": {
+        "type": "programming",
+        "extensions": [
+            ".nasl",
+            ".inc"
+        ],
+        "tm_scope": "source.nasl",
+        "ace_mode": "text",
+        "language_id": 171666519
     },
     "NCL": {
         "type": "programming",
@@ -3743,6 +4200,19 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 240
     },
+    "NEON": {
+        "type": "data",
+        "extensions": [
+            ".neon"
+        ],
+        "tm_scope": "source.neon",
+        "ace_mode": "text",
+        "aliases": [
+            "nette object notation",
+            "ne-on"
+        ],
+        "language_id": 481192983
+    },
     "NL": {
         "type": "data",
         "extensions": [
@@ -3752,12 +4222,26 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 241
     },
+    "NPM Config": {
+        "type": "data",
+        "group": "INI",
+        "aliases": [
+            "npmrc"
+        ],
+        "filenames": [
+            ".npmrc"
+        ],
+        "tm_scope": "source.ini.npmrc",
+        "ace_mode": "text",
+        "language_id": 685022663
+    },
     "NSIS": {
         "type": "programming",
         "extensions": [
             ".nsi",
             ".nsh"
         ],
+        "tm_scope": "source.nsis",
         "ace_mode": "text",
         "codemirror_mode": "nsis",
         "codemirror_mime_type": "text/x-nsis",
@@ -3780,6 +4264,7 @@ module.exports = {
         "extensions": [
             ".n"
         ],
+        "tm_scope": "source.nemerle",
         "ace_mode": "text",
         "language_id": 243
     },
@@ -3853,6 +4338,7 @@ module.exports = {
     "Nginx": {
         "type": "data",
         "extensions": [
+            ".nginx",
             ".nginxconf",
             ".vhost"
         ],
@@ -3870,7 +4356,7 @@ module.exports = {
     },
     "Nim": {
         "type": "programming",
-        "color": "#37775b",
+        "color": "#ffc200",
         "extensions": [
             ".nim",
             ".nim.cfg",
@@ -3940,6 +4426,7 @@ module.exports = {
     },
     "NumPy": {
         "type": "programming",
+        "color": "#9C8AF9",
         "group": "Python",
         "extensions": [
             ".numpy",
@@ -3983,6 +4470,25 @@ module.exports = {
         "tm_scope": "objdump.x86asm",
         "ace_mode": "assembly_x86",
         "language_id": 256
+    },
+    "Object Data Instance Notation": {
+        "type": "data",
+        "extensions": [
+            ".odin"
+        ],
+        "tm_scope": "source.odin-ehr",
+        "ace_mode": "text",
+        "language_id": 985227236
+    },
+    "ObjectScript": {
+        "type": "programming",
+        "extensions": [
+            ".cls"
+        ],
+        "language_id": 202735509,
+        "tm_scope": "source.objectscript",
+        "color": "#424893",
+        "ace_mode": "text"
     },
     "Objective-C": {
         "type": "programming",
@@ -4035,6 +4541,20 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 259
     },
+    "Odin": {
+        "type": "programming",
+        "color": "#60AFFE",
+        "aliases": [
+            "odinlang",
+            "odin-lang"
+        ],
+        "extensions": [
+            ".odin"
+        ],
+        "tm_scope": "source.odin",
+        "ace_mode": "text",
+        "language_id": 889244082
+    },
     "Omgrofl": {
         "type": "programming",
         "extensions": [
@@ -4050,6 +4570,7 @@ module.exports = {
         "extensions": [
             ".opa"
         ],
+        "tm_scope": "source.opa",
         "ace_mode": "text",
         "language_id": 261
     },
@@ -4062,6 +4583,15 @@ module.exports = {
         "tm_scope": "source.opal",
         "ace_mode": "text",
         "language_id": 262
+    },
+    "Open Policy Agent": {
+        "type": "programming",
+        "ace_mode": "text",
+        "extensions": [
+            ".rego"
+        ],
+        "language_id": 840483232,
+        "tm_scope": "source.rego"
     },
     "OpenCL": {
         "type": "programming",
@@ -4092,6 +4622,16 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 264
     },
+    "OpenQASM": {
+        "type": "programming",
+        "extensions": [
+            ".qasm"
+        ],
+        "color": "#AA70FF",
+        "tm_scope": "source.qasm",
+        "ace_mode": "text",
+        "language_id": 153739399
+    },
     "OpenRC runscript": {
         "type": "programming",
         "group": "Shell",
@@ -4115,6 +4655,15 @@ module.exports = {
         "tm_scope": "source.scad",
         "ace_mode": "scad",
         "language_id": 266
+    },
+    "OpenStep Property List": {
+        "type": "data",
+        "extensions": [
+            ".plist"
+        ],
+        "tm_scope": "source.plist",
+        "ace_mode": "text",
+        "language_id": 598917541
     },
     "OpenType Feature File": {
         "type": "data",
@@ -4263,6 +4812,7 @@ module.exports = {
             ".pov",
             ".inc"
         ],
+        "tm_scope": "source.pov-ray sdl",
         "ace_mode": "text",
         "language_id": 275
     },
@@ -4343,6 +4893,7 @@ module.exports = {
         "interpreters": [
             "instantfpc"
         ],
+        "tm_scope": "source.pascal",
         "ace_mode": "pascal",
         "codemirror_mode": "pascal",
         "codemirror_mime_type": "text/x-pascal",
@@ -4353,7 +4904,8 @@ module.exports = {
         "color": "#dbb284",
         "extensions": [
             ".pwn",
-            ".inc"
+            ".inc",
+            ".sma"
         ],
         "tm_scope": "source.pawn",
         "ace_mode": "text",
@@ -4402,34 +4954,6 @@ module.exports = {
             "cperl"
         ],
         "language_id": 282
-    },
-    "Perl 6": {
-        "type": "programming",
-        "color": "#0000fb",
-        "extensions": [
-            ".6pl",
-            ".6pm",
-            ".nqp",
-            ".p6",
-            ".p6l",
-            ".p6m",
-            ".pl",
-            ".pl6",
-            ".pm",
-            ".pm6",
-            ".t"
-        ],
-        "interpreters": [
-            "perl6"
-        ],
-        "aliases": [
-            "perl6"
-        ],
-        "tm_scope": "source.perl6fe",
-        "ace_mode": "perl",
-        "codemirror_mode": "perl",
-        "codemirror_mime_type": "text/x-perl",
-        "language_id": 283
     },
     "Pic": {
         "type": "markup",
@@ -4486,8 +5010,20 @@ module.exports = {
         "interpreters": [
             "pike"
         ],
+        "tm_scope": "source.pike",
         "ace_mode": "text",
         "language_id": 287
+    },
+    "PlantUML": {
+        "type": "data",
+        "extensions": [
+            ".puml",
+            ".iuml",
+            ".plantuml"
+        ],
+        "tm_scope": "source.wsd",
+        "ace_mode": "text",
+        "language_id": 833504686
     },
     "Pod": {
         "type": "prose",
@@ -4542,7 +5078,8 @@ module.exports = {
         "tm_scope": "source.postcss",
         "group": "CSS",
         "extensions": [
-            ".pcss"
+            ".pcss",
+            ".postcss"
         ],
         "ace_mode": "text",
         "language_id": 262764437
@@ -4553,6 +5090,7 @@ module.exports = {
         "extensions": [
             ".ps",
             ".eps",
+            ".epsi",
             ".pfa"
         ],
         "tm_scope": "source.postscript",
@@ -4578,6 +5116,7 @@ module.exports = {
     "PowerShell": {
         "type": "programming",
         "color": "#012456",
+        "tm_scope": "source.powershell",
         "ace_mode": "powershell",
         "codemirror_mode": "powershell",
         "codemirror_mime_type": "application/x-powershell",
@@ -4595,14 +5134,34 @@ module.exports = {
         ],
         "language_id": 293
     },
+    "Prisma": {
+        "type": "data",
+        "color": "#0c344b",
+        "extensions": [
+            ".prisma"
+        ],
+        "tm_scope": "source.prisma",
+        "ace_mode": "text",
+        "language_id": 499933428
+    },
     "Processing": {
         "type": "programming",
         "color": "#0096D8",
         "extensions": [
             ".pde"
         ],
+        "tm_scope": "source.processing",
         "ace_mode": "text",
         "language_id": 294
+    },
+    "Proguard": {
+        "type": "data",
+        "extensions": [
+            ".pro"
+        ],
+        "tm_scope": "none",
+        "ace_mode": "text",
+        "language_id": 716513858
     },
     "Prolog": {
         "type": "programming",
@@ -4659,8 +5218,8 @@ module.exports = {
         "language_id": 298
     },
     "Pug": {
-        "group": "HTML",
         "type": "markup",
+        "color": "#a86454",
         "extensions": [
             ".jade",
             ".pug"
@@ -4720,13 +5279,13 @@ module.exports = {
     },
     "Python": {
         "type": "programming",
+        "tm_scope": "source.python",
         "ace_mode": "python",
         "codemirror_mode": "python",
         "codemirror_mime_type": "text/x-python",
         "color": "#3572A5",
         "extensions": [
             ".py",
-            ".bzl",
             ".cgi",
             ".fcgi",
             ".gyp",
@@ -4739,6 +5298,7 @@ module.exports = {
             ".pyt",
             ".pyw",
             ".rpy",
+            ".smk",
             ".spec",
             ".tac",
             ".wsgi",
@@ -4746,13 +5306,10 @@ module.exports = {
         ],
         "filenames": [
             ".gclient",
-            "BUCK",
-            "BUILD",
-            "BUILD.bazel",
+            "DEPS",
             "SConscript",
             "SConstruct",
             "Snakefile",
-            "WORKSPACE",
             "wscript"
         ],
         "interpreters": [
@@ -4761,8 +5318,8 @@ module.exports = {
             "python3"
         ],
         "aliases": [
-            "rusthon",
-            "python3"
+            "python3",
+            "rusthon"
         ],
         "language_id": 303
     },
@@ -4788,6 +5345,19 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 304
     },
+    "Q#": {
+        "type": "programming",
+        "extensions": [
+            ".qs"
+        ],
+        "aliases": [
+            "qsharp"
+        ],
+        "color": "#fed659",
+        "ace_mode": "text",
+        "tm_scope": "source.qsharp",
+        "language_id": 697448245
+    },
     "QML": {
         "type": "programming",
         "color": "#44a51c",
@@ -4808,8 +5378,25 @@ module.exports = {
         "interpreters": [
             "qmake"
         ],
+        "tm_scope": "source.qmake",
         "ace_mode": "text",
         "language_id": 306
+    },
+    "Qt Script": {
+        "type": "programming",
+        "ace_mode": "javascript",
+        "codemirror_mode": "javascript",
+        "codemirror_mime_type": "text/javascript",
+        "extensions": [
+            ".qs"
+        ],
+        "filenames": [
+            "installscript.qs",
+            "toolchain_installscript.qs"
+        ],
+        "color": "#00b841",
+        "tm_scope": "source.js",
+        "language_id": 558193693
     },
     "Quake": {
         "type": "programming",
@@ -4842,6 +5429,7 @@ module.exports = {
         "interpreters": [
             "Rscript"
         ],
+        "tm_scope": "source.r",
         "ace_mode": "r",
         "codemirror_mode": "r",
         "codemirror_mime_type": "text/x-rsrc",
@@ -4901,21 +5489,6 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 311
     },
-    "RHTML": {
-        "type": "markup",
-        "group": "HTML",
-        "extensions": [
-            ".rhtml"
-        ],
-        "tm_scope": "text.html.erb",
-        "aliases": [
-            "html+ruby"
-        ],
-        "ace_mode": "rhtml",
-        "codemirror_mode": "htmlembedded",
-        "codemirror_mime_type": "application/x-erb",
-        "language_id": 312
-    },
     "RMarkdown": {
         "type": "prose",
         "wrap": true,
@@ -4963,13 +5536,14 @@ module.exports = {
             ".rnh",
             ".rno"
         ],
+        "wrap": true,
         "tm_scope": "text.runoff",
         "ace_mode": "text",
         "language_id": 315
     },
     "Racket": {
         "type": "programming",
-        "color": "#22228f",
+        "color": "#3c5caa",
         "extensions": [
             ".rkt",
             ".rktd",
@@ -4997,6 +5571,37 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 317
     },
+    "Raku": {
+        "type": "programming",
+        "color": "#0000fb",
+        "extensions": [
+            ".6pl",
+            ".6pm",
+            ".nqp",
+            ".p6",
+            ".p6l",
+            ".p6m",
+            ".pl",
+            ".pl6",
+            ".pm",
+            ".pm6",
+            ".t"
+        ],
+        "interpreters": [
+            "perl6",
+            "raku",
+            "rakudo"
+        ],
+        "aliases": [
+            "perl6",
+            "perl-6"
+        ],
+        "tm_scope": "source.perl6fe",
+        "ace_mode": "perl",
+        "codemirror_mode": "perl",
+        "codemirror_mime_type": "text/x-perl",
+        "language_id": 283
+    },
     "Rascal": {
         "type": "programming",
         "color": "#fffaa0",
@@ -5019,18 +5624,30 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 318
     },
+    "Readline Config": {
+        "type": "data",
+        "group": "INI",
+        "aliases": [
+            "inputrc",
+            "readline"
+        ],
+        "filenames": [
+            ".inputrc",
+            "inputrc"
+        ],
+        "tm_scope": "source.inputrc",
+        "ace_mode": "text",
+        "language_id": 538732839
+    },
     "Reason": {
         "type": "programming",
-        "group": "OCaml",
+        "color": "#ff5847",
         "ace_mode": "rust",
         "codemirror_mode": "rust",
         "codemirror_mime_type": "text/x-rustsrc",
         "extensions": [
             ".re",
             ".rei"
-        ],
-        "interpreters": [
-            "ocaml"
         ],
         "tm_scope": "source.reason",
         "language_id": 869538413
@@ -5109,6 +5726,15 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 323
     },
+    "Rich Text Format": {
+        "type": "markup",
+        "extensions": [
+            ".rtf"
+        ],
+        "tm_scope": "text.rtf",
+        "ace_mode": "text",
+        "language_id": 51601661
+    },
     "Ring": {
         "type": "programming",
         "color": "#2D54CB",
@@ -5118,6 +5744,16 @@ module.exports = {
         "tm_scope": "source.ring",
         "ace_mode": "text",
         "language_id": 431
+    },
+    "Riot": {
+        "type": "markup",
+        "color": "#A71E49",
+        "ace_mode": "html",
+        "extensions": [
+            ".riot"
+        ],
+        "tm_scope": "text.html.riot",
+        "language_id": 878396783
     },
     "RobotFramework": {
         "type": "programming",
@@ -5162,8 +5798,11 @@ module.exports = {
             ".tmac"
         ],
         "filenames": [
+            "eqnrc",
             "mmn",
-            "mmt"
+            "mmt",
+            "troffrc",
+            "troffrc-end"
         ],
         "tm_scope": "text.roff",
         "aliases": [
@@ -5176,6 +5815,7 @@ module.exports = {
             "nroff",
             "troff"
         ],
+        "wrap": true,
         "ace_mode": "text",
         "codemirror_mode": "troff",
         "codemirror_mime_type": "text/troff",
@@ -5206,6 +5846,7 @@ module.exports = {
             ".man",
             ".mdoc"
         ],
+        "wrap": true,
         "tm_scope": "text.roff",
         "ace_mode": "text",
         "codemirror_mode": "troff",
@@ -5226,6 +5867,7 @@ module.exports = {
     },
     "Ruby": {
         "type": "programming",
+        "tm_scope": "source.ruby",
         "ace_mode": "ruby",
         "codemirror_mode": "ruby",
         "codemirror_mime_type": "text/x-ruby",
@@ -5250,6 +5892,7 @@ module.exports = {
             ".podspec",
             ".rabl",
             ".rake",
+            ".rbi",
             ".rbuild",
             ".rbw",
             ".rbx",
@@ -5269,6 +5912,7 @@ module.exports = {
         "filenames": [
             ".irbrc",
             ".pryrc",
+            ".simplecov",
             "Appraisals",
             "Berksfile",
             "Brewfile",
@@ -5299,6 +5943,7 @@ module.exports = {
             ".rs",
             ".rs.in"
         ],
+        "tm_scope": "source.rust",
         "ace_mode": "rust",
         "codemirror_mode": "rust",
         "codemirror_mime_type": "text/x-rustsrc",
@@ -5318,8 +5963,8 @@ module.exports = {
     },
     "SCSS": {
         "type": "markup",
-        "tm_scope": "source.scss",
-        "group": "CSS",
+        "color": "#c6538c",
+        "tm_scope": "source.css.scss",
         "ace_mode": "scss",
         "codemirror_mode": "css",
         "codemirror_mime_type": "text/x-scss",
@@ -5416,6 +6061,21 @@ module.exports = {
         ],
         "language_id": 335
     },
+    "SSH Config": {
+        "type": "data",
+        "group": "INI",
+        "filenames": [
+            "ssh-config",
+            "ssh_config",
+            "sshconfig",
+            "sshconfig.snip",
+            "sshd-config",
+            "sshd_config"
+        ],
+        "ace_mode": "text",
+        "tm_scope": "source.ssh-config",
+        "language_id": 554920715
+    },
     "STON": {
         "type": "data",
         "group": "Smalltalk",
@@ -5428,18 +6088,29 @@ module.exports = {
     },
     "SVG": {
         "type": "data",
+        "color": "#ff9900",
         "extensions": [
             ".svg"
         ],
-        "tm_scope": "text.xml",
+        "tm_scope": "text.xml.svg",
         "ace_mode": "xml",
         "codemirror_mode": "xml",
         "codemirror_mime_type": "text/xml",
         "language_id": 337
     },
+    "SWIG": {
+        "type": "programming",
+        "extensions": [
+            ".i"
+        ],
+        "tm_scope": "source.c++",
+        "ace_mode": "c_cpp",
+        "codemirror_mode": "clike",
+        "codemirror_mime_type": "text/x-c++src",
+        "language_id": 1066250075
+    },
     "Sage": {
         "type": "programming",
-        "group": "Python",
         "extensions": [
             ".sage",
             ".sagews"
@@ -5468,8 +6139,8 @@ module.exports = {
     },
     "Sass": {
         "type": "markup",
+        "color": "#a53b70",
         "tm_scope": "source.sass",
-        "group": "CSS",
         "extensions": [
             ".sass"
         ],
@@ -5480,6 +6151,7 @@ module.exports = {
     },
     "Scala": {
         "type": "programming",
+        "tm_scope": "source.scala",
         "ace_mode": "scala",
         "codemirror_mode": "clike",
         "codemirror_mime_type": "text/x-scala",
@@ -5525,6 +6197,7 @@ module.exports = {
             "gosh",
             "r6rs"
         ],
+        "tm_scope": "source.scheme",
         "ace_mode": "scheme",
         "codemirror_mode": "scheme",
         "codemirror_mime_type": "text/x-scheme",
@@ -5537,6 +6210,7 @@ module.exports = {
             ".sce",
             ".tst"
         ],
+        "tm_scope": "source.scilab",
         "ace_mode": "text",
         "language_id": 344
     },
@@ -5574,6 +6248,7 @@ module.exports = {
             ".bats",
             ".cgi",
             ".command",
+            ".env",
             ".fcgi",
             ".ksh",
             ".sh.in",
@@ -5588,6 +6263,9 @@ module.exports = {
             ".bash_profile",
             ".bashrc",
             ".cshrc",
+            ".env",
+            ".env.example",
+            ".flaskenv",
             ".login",
             ".profile",
             ".zlogin",
@@ -5623,6 +6301,7 @@ module.exports = {
             "sh",
             "zsh"
         ],
+        "tm_scope": "source.shell",
         "ace_mode": "sh",
         "codemirror_mode": "shell",
         "codemirror_mime_type": "text/x-sh",
@@ -5653,6 +6332,17 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 348
     },
+    "Sieve": {
+        "type": "programming",
+        "tm_scope": "source.sieve",
+        "ace_mode": "text",
+        "extensions": [
+            ".sieve"
+        ],
+        "codemirror_mode": "sieve",
+        "codemirror_mime_type": "application/sieve",
+        "language_id": 208976687
+    },
     "Slash": {
         "type": "programming",
         "color": "#007eff",
@@ -5674,8 +6364,8 @@ module.exports = {
         "language_id": 894641667
     },
     "Slim": {
-        "group": "HTML",
         "type": "markup",
+        "color": "#2b2b2b",
         "extensions": [
             ".slim"
         ],
@@ -5684,6 +6374,19 @@ module.exports = {
         "codemirror_mode": "slim",
         "codemirror_mime_type": "text/x-slim",
         "language_id": 350
+    },
+    "SmPL": {
+        "type": "programming",
+        "extensions": [
+            ".cocci"
+        ],
+        "aliases": [
+            "coccinelle"
+        ],
+        "ace_mode": "text",
+        "tm_scope": "source.smpl",
+        "color": "#c94949",
+        "language_id": 164123055
     },
     "Smali": {
         "type": "programming",
@@ -5704,6 +6407,7 @@ module.exports = {
         "aliases": [
             "squeak"
         ],
+        "tm_scope": "source.smalltalk",
         "ace_mode": "text",
         "codemirror_mode": "smalltalk",
         "codemirror_mime_type": "text/x-stsrc",
@@ -5725,20 +6429,22 @@ module.exports = {
         "color": "#AA6746",
         "ace_mode": "text",
         "tm_scope": "source.solidity",
+        "extensions": [
+            ".sol"
+        ],
         "language_id": 237469032
     },
     "SourcePawn": {
         "type": "programming",
-        "color": "#5c7611",
+        "color": "#f69e1d",
         "aliases": [
             "sourcemod"
         ],
         "extensions": [
             ".sp",
-            ".inc",
-            ".sma"
+            ".inc"
         ],
-        "tm_scope": "source.sp",
+        "tm_scope": "source.sourcepawn",
         "ace_mode": "text",
         "language_id": 354
     },
@@ -5780,7 +6486,7 @@ module.exports = {
             "sml"
         ],
         "extensions": [
-            ".ML",
+            ".ml",
             ".fun",
             ".sig",
             ".sml"
@@ -5790,6 +6496,29 @@ module.exports = {
         "codemirror_mode": "mllike",
         "codemirror_mime_type": "text/x-ocaml",
         "language_id": 357
+    },
+    "Starlark": {
+        "type": "programming",
+        "tm_scope": "source.python",
+        "ace_mode": "python",
+        "codemirror_mode": "python",
+        "codemirror_mime_type": "text/x-python",
+        "color": "#76d275",
+        "extensions": [
+            ".bzl"
+        ],
+        "filenames": [
+            "BUCK",
+            "BUILD",
+            "BUILD.bazel",
+            "Tiltfile",
+            "WORKSPACE"
+        ],
+        "aliases": [
+            "bazel",
+            "bzl"
+        ],
+        "language_id": 960266174
     },
     "Stata": {
         "type": "programming",
@@ -5802,12 +6531,13 @@ module.exports = {
             ".matah",
             ".sthlp"
         ],
+        "tm_scope": "source.stata",
         "ace_mode": "text",
         "language_id": 358
     },
     "Stylus": {
         "type": "markup",
-        "group": "CSS",
+        "color": "#ff6347",
         "extensions": [
             ".styl"
         ],
@@ -5849,12 +6579,25 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 361
     },
+    "Svelte": {
+        "type": "markup",
+        "color": "#ff3e00",
+        "tm_scope": "source.svelte",
+        "ace_mode": "html",
+        "codemirror_mode": "htmlmixed",
+        "codemirror_mime_type": "text/html",
+        "extensions": [
+            ".svelte"
+        ],
+        "language_id": 928734530
+    },
     "Swift": {
         "type": "programming",
         "color": "#ffac45",
         "extensions": [
             ".swift"
         ],
+        "tm_scope": "source.swift",
         "ace_mode": "text",
         "codemirror_mode": "swift",
         "codemirror_mime_type": "text/x-swift",
@@ -5868,6 +6611,7 @@ module.exports = {
             ".svh",
             ".vh"
         ],
+        "tm_scope": "source.systemverilog",
         "ace_mode": "verilog",
         "codemirror_mode": "verilog",
         "codemirror_mime_type": "text/x-systemverilog",
@@ -5902,13 +6646,44 @@ module.exports = {
         ],
         "filenames": [
             "Cargo.lock",
-            "Gopkg.lock"
+            "Gopkg.lock",
+            "poetry.lock"
         ],
         "tm_scope": "source.toml",
         "ace_mode": "toml",
         "codemirror_mode": "toml",
         "codemirror_mime_type": "text/x-toml",
         "language_id": 365
+    },
+    "TSQL": {
+        "type": "programming",
+        "extensions": [
+            ".sql"
+        ],
+        "ace_mode": "sql",
+        "tm_scope": "source.tsql",
+        "language_id": 918334941
+    },
+    "TSV": {
+        "type": "data",
+        "ace_mode": "text",
+        "tm_scope": "source.generic-db",
+        "extensions": [
+            ".tsv"
+        ],
+        "language_id": 1035892117
+    },
+    "TSX": {
+        "type": "programming",
+        "group": "TypeScript",
+        "extensions": [
+            ".tsx"
+        ],
+        "tm_scope": "source.tsx",
+        "ace_mode": "javascript",
+        "codemirror_mode": "jsx",
+        "codemirror_mime_type": "text/jsx",
+        "language_id": 94901924
     },
     "TXL": {
         "type": "programming",
@@ -5935,6 +6710,7 @@ module.exports = {
             "tclsh",
             "wish"
         ],
+        "tm_scope": "source.tcl",
         "ace_mode": "tcl",
         "codemirror_mode": "tcl",
         "codemirror_mime_type": "text/x-tcl",
@@ -5946,6 +6722,10 @@ module.exports = {
         "extensions": [
             ".tcsh",
             ".csh"
+        ],
+        "interpreters": [
+            "tcsh",
+            "csh"
         ],
         "tm_scope": "source.shell",
         "ace_mode": "sh",
@@ -5959,6 +6739,7 @@ module.exports = {
         "ace_mode": "tex",
         "codemirror_mode": "stex",
         "codemirror_mime_type": "text/x-stex",
+        "tm_scope": "text.tex.latex",
         "wrap": true,
         "aliases": [
             "latex"
@@ -5967,7 +6748,6 @@ module.exports = {
             ".tex",
             ".aux",
             ".bbx",
-            ".bib",
             ".cbx",
             ".cls",
             ".dtx",
@@ -5997,6 +6777,7 @@ module.exports = {
             ".t"
         ],
         "color": "#00004c",
+        "tm_scope": "source.terra",
         "ace_mode": "lua",
         "codemirror_mode": "lua",
         "codemirror_mime_type": "text/x-lua",
@@ -6004,6 +6785,21 @@ module.exports = {
             "lua"
         ],
         "language_id": 371
+    },
+    "Texinfo": {
+        "type": "prose",
+        "wrap": true,
+        "extensions": [
+            ".texinfo",
+            ".texi",
+            ".txi"
+        ],
+        "ace_mode": "text",
+        "tm_scope": "text.texinfo",
+        "interpreters": [
+            "makeinfo"
+        ],
+        "language_id": 988020015
     },
     "Text": {
         "type": "prose",
@@ -6036,9 +6832,14 @@ module.exports = {
             "go.mod",
             "go.sum",
             "keep.me",
+            "package.mask",
+            "package.use.mask",
+            "package.use.stable.mask",
             "read.me",
             "readme.1st",
-            "test.me"
+            "test.me",
+            "use.mask",
+            "use.stable.mask"
         ],
         "tm_scope": "none",
         "ace_mode": "text",
@@ -6089,7 +6890,7 @@ module.exports = {
     },
     "Twig": {
         "type": "markup",
-        "group": "HTML",
+        "color": "#c1d026",
         "extensions": [
             ".twig"
         ],
@@ -6118,11 +6919,11 @@ module.exports = {
             "ts"
         ],
         "interpreters": [
-            "node"
+            "deno",
+            "ts-node"
         ],
         "extensions": [
-            ".ts",
-            ".tsx"
+            ".ts"
         ],
         "tm_scope": "source.ts",
         "ace_mode": "typescript",
@@ -6132,6 +6933,7 @@ module.exports = {
     },
     "Unified Parallel C": {
         "type": "programming",
+        "color": "#4e3617",
         "group": "C",
         "ace_mode": "c_cpp",
         "codemirror_mode": "clike",
@@ -6150,6 +6952,7 @@ module.exports = {
         "extensions": [
             ".anim",
             ".asset",
+            ".mask",
             ".mat",
             ".meta",
             ".prefab",
@@ -6171,6 +6974,7 @@ module.exports = {
     },
     "Uno": {
         "type": "programming",
+        "color": "#9933cc",
         "extensions": [
             ".uno"
         ],
@@ -6206,6 +7010,54 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 383
     },
+    "V": {
+        "type": "programming",
+        "color": "#4f87c4",
+        "aliases": [
+            "vlang"
+        ],
+        "extensions": [
+            ".v"
+        ],
+        "tm_scope": "source.v",
+        "ace_mode": "golang",
+        "codemirror_mode": "go",
+        "codemirror_mime_type": "text/x-go",
+        "language_id": 603371597
+    },
+    "VBA": {
+        "type": "programming",
+        "color": "#867db1",
+        "extensions": [
+            ".bas",
+            ".cls",
+            ".frm",
+            ".frx",
+            ".vba"
+        ],
+        "tm_scope": "source.vbnet",
+        "aliases": [
+            "vb6",
+            "visual basic 6",
+            "visual basic for applications"
+        ],
+        "ace_mode": "text",
+        "codemirror_mode": "vb",
+        "codemirror_mime_type": "text/x-vb",
+        "language_id": 399230729
+    },
+    "VBScript": {
+        "type": "programming",
+        "color": "#15dcdc",
+        "extensions": [
+            ".vbs"
+        ],
+        "tm_scope": "source.vbnet",
+        "ace_mode": "text",
+        "codemirror_mode": "vbscript",
+        "codemirror_mime_type": "text/vbscript",
+        "language_id": 408016005
+    },
     "VCL": {
         "type": "programming",
         "color": "#148AA8",
@@ -6229,6 +7081,7 @@ module.exports = {
             ".vht",
             ".vhw"
         ],
+        "tm_scope": "source.vhdl",
         "ace_mode": "vhdl",
         "codemirror_mode": "vhdl",
         "codemirror_mime_type": "text/x-vhdl",
@@ -6241,6 +7094,7 @@ module.exports = {
             ".vala",
             ".vapi"
         ],
+        "tm_scope": "source.vala",
         "ace_mode": "vala",
         "language_id": 386
     },
@@ -6251,10 +7105,40 @@ module.exports = {
             ".v",
             ".veo"
         ],
+        "tm_scope": "source.verilog",
         "ace_mode": "verilog",
         "codemirror_mode": "verilog",
         "codemirror_mime_type": "text/x-verilog",
         "language_id": 387
+    },
+    "Vim Help File": {
+        "type": "prose",
+        "aliases": [
+            "vimhelp"
+        ],
+        "extensions": [
+            ".txt"
+        ],
+        "tm_scope": "text.vim-help",
+        "ace_mode": "text",
+        "language_id": 508563686
+    },
+    "Vim Snippet": {
+        "type": "markup",
+        "aliases": [
+            "SnipMate",
+            "UltiSnip",
+            "UltiSnips",
+            "NeoSnippet"
+        ],
+        "extensions": [
+            ".snip",
+            ".snippet",
+            ".snippets"
+        ],
+        "tm_scope": "source.vim-snippet",
+        "ace_mode": "text",
+        "language_id": 81265970
     },
     "Vim script": {
         "type": "programming",
@@ -6266,9 +7150,12 @@ module.exports = {
             "nvim"
         ],
         "extensions": [
-            ".vim"
+            ".vim",
+            ".vba",
+            ".vmb"
         ],
         "filenames": [
+            ".exrc",
             ".gvimrc",
             ".nvimrc",
             ".vimrc",
@@ -6280,24 +7167,20 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 388
     },
-    "Visual Basic": {
+    "Visual Basic .NET": {
         "type": "programming",
         "color": "#945db7",
         "extensions": [
             ".vb",
-            ".bas",
-            ".cls",
-            ".frm",
-            ".frx",
-            ".vba",
-            ".vbhtml",
-            ".vbs"
+            ".vbhtml"
+        ],
+        "aliases": [
+            "visual basic",
+            "vbnet",
+            "vb .net",
+            "vb.net"
         ],
         "tm_scope": "source.vbnet",
-        "aliases": [
-            "vb.net",
-            "vbnet"
-        ],
         "ace_mode": "text",
         "codemirror_mode": "vb",
         "codemirror_mime_type": "text/x-vb",
@@ -6380,6 +7263,29 @@ module.exports = {
         "codemirror_mime_type": "text/x-webidl",
         "language_id": 395
     },
+    "WebVTT": {
+        "type": "data",
+        "wrap": true,
+        "extensions": [
+            ".vtt"
+        ],
+        "tm_scope": "source.vtt",
+        "ace_mode": "text",
+        "language_id": 658679714
+    },
+    "Wget Config": {
+        "type": "data",
+        "group": "INI",
+        "aliases": [
+            "wgetrc"
+        ],
+        "filenames": [
+            ".wgetrc"
+        ],
+        "tm_scope": "source.wgetrc",
+        "ace_mode": "text",
+        "language_id": 668457123
+    },
     "Windows Registry Entries": {
         "type": "data",
         "extensions": [
@@ -6390,6 +7296,16 @@ module.exports = {
         "codemirror_mode": "properties",
         "codemirror_mime_type": "text/x-properties",
         "language_id": 969674868
+    },
+    "Wollok": {
+        "type": "programming",
+        "color": "#a23738",
+        "extensions": [
+            ".wlk"
+        ],
+        "ace_mode": "text",
+        "tm_scope": "source.wollok",
+        "language_id": 632745969
     },
     "World of Warcraft Addon Data": {
         "type": "data",
@@ -6481,6 +7397,7 @@ module.exports = {
     },
     "XML": {
         "type": "data",
+        "tm_scope": "text.xml",
         "ace_mode": "xml",
         "codemirror_mode": "xml",
         "codemirror_mime_type": "text/xml",
@@ -6518,6 +7435,7 @@ module.exports = {
             ".gml",
             ".gmx",
             ".grxml",
+            ".gst",
             ".iml",
             ".ivy",
             ".jelly",
@@ -6537,7 +7455,6 @@ module.exports = {
             ".odd",
             ".osm",
             ".pkgproj",
-            ".plist",
             ".pluginspec",
             ".proj",
             ".props",
@@ -6553,15 +7470,9 @@ module.exports = {
             ".shproj",
             ".srdf",
             ".storyboard",
-            ".stTheme",
             ".sublime-snippet",
             ".targets",
-            ".tmCommand",
             ".tml",
-            ".tmLanguage",
-            ".tmPreferences",
-            ".tmSnippet",
-            ".tmTheme",
             ".ts",
             ".tsx",
             ".ui",
@@ -6607,6 +7518,24 @@ module.exports = {
             "packages.config"
         ],
         "language_id": 399
+    },
+    "XML Property List": {
+        "type": "data",
+        "group": "XML",
+        "extensions": [
+            ".plist",
+            ".stTheme",
+            ".tmCommand",
+            ".tmLanguage",
+            ".tmPreferences",
+            ".tmSnippet",
+            ".tmTheme"
+        ],
+        "tm_scope": "text.xml.plist",
+        "ace_mode": "xml",
+        "codemirror_mode": "xml",
+        "codemirror_mime_type": "text/xml",
+        "language_id": 75622871
     },
     "XPages": {
         "type": "data",
@@ -6685,7 +7614,7 @@ module.exports = {
             ".xojo_toolbar",
             ".xojo_window"
         ],
-        "tm_scope": "source.vbnet",
+        "tm_scope": "source.xojo",
         "ace_mode": "text",
         "language_id": 405
     },
@@ -6694,11 +7623,13 @@ module.exports = {
         "extensions": [
             ".xtend"
         ],
+        "tm_scope": "source.xtend",
         "ace_mode": "text",
         "language_id": 406
     },
     "YAML": {
         "type": "data",
+        "color": "#cb171e",
         "tm_scope": "source.yaml",
         "aliases": [
             "yml"
@@ -6712,13 +7643,15 @@ module.exports = {
             ".syntax",
             ".yaml",
             ".yaml-tmlanguage",
+            ".yaml.sed",
             ".yml.mysql"
         ],
         "filenames": [
             ".clang-format",
             ".clang-tidy",
             ".gemrc",
-            "glide.lock"
+            "glide.lock",
+            "yarn.lock"
         ],
         "ace_mode": "yaml",
         "codemirror_mode": "yaml",
@@ -6766,10 +7699,55 @@ module.exports = {
             ".yacc",
             ".yy"
         ],
-        "tm_scope": "source.bison",
+        "tm_scope": "source.yacc",
         "ace_mode": "text",
         "color": "#4B6C4B",
         "language_id": 409
+    },
+    "ZAP": {
+        "type": "programming",
+        "color": "#0d665e",
+        "extensions": [
+            ".zap",
+            ".xzap"
+        ],
+        "tm_scope": "source.zap",
+        "ace_mode": "text",
+        "language_id": 952972794
+    },
+    "ZIL": {
+        "type": "programming",
+        "color": "#dc75e5",
+        "extensions": [
+            ".zil",
+            ".mud"
+        ],
+        "tm_scope": "source.zil",
+        "ace_mode": "text",
+        "language_id": 973483626
+    },
+    "Zeek": {
+        "type": "programming",
+        "aliases": [
+            "bro"
+        ],
+        "extensions": [
+            ".zeek",
+            ".bro"
+        ],
+        "tm_scope": "source.zeek",
+        "ace_mode": "text",
+        "language_id": 40
+    },
+    "ZenScript": {
+        "type": "programming",
+        "color": "#00BCD1",
+        "extensions": [
+            ".zs"
+        ],
+        "tm_scope": "source.zenscript",
+        "ace_mode": "text",
+        "language_id": 494938890
     },
     "Zephir": {
         "type": "programming",
@@ -6802,6 +7780,20 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 411
     },
+    "cURL Config": {
+        "type": "data",
+        "group": "INI",
+        "aliases": [
+            "curlrc"
+        ],
+        "filenames": [
+            ".curlrc",
+            "_curlrc"
+        ],
+        "tm_scope": "source.curlrc",
+        "ace_mode": "text",
+        "language_id": 992375436
+    },
     "desktop": {
         "type": "data",
         "extensions": [
@@ -6811,6 +7803,23 @@ module.exports = {
         "tm_scope": "source.desktop",
         "ace_mode": "text",
         "language_id": 412
+    },
+    "dircolors": {
+        "type": "data",
+        "extensions": [
+            ".dircolors"
+        ],
+        "filenames": [
+            ".dir_colors",
+            ".dircolors",
+            "DIR_COLORS",
+            "_dir_colors",
+            "_dircolors",
+            "dir_colors"
+        ],
+        "tm_scope": "source.dircolors",
+        "ace_mode": "text",
+        "language_id": 691605112
     },
     "eC": {
         "type": "programming",
@@ -6847,11 +7856,32 @@ module.exports = {
         "ace_mode": "text",
         "language_id": 415
     },
+    "mIRC Script": {
+        "type": "programming",
+        "color": "#3d57c3",
+        "extensions": [
+            ".mrc"
+        ],
+        "tm_scope": "source.msl",
+        "ace_mode": "text",
+        "language_id": 517654727
+    },
+    "mcfunction": {
+        "type": "programming",
+        "color": "#E22837",
+        "extensions": [
+            ".mcfunction"
+        ],
+        "tm_scope": "source.mcfunction",
+        "ace_mode": "text",
+        "language_id": 462488745
+    },
     "mupad": {
         "type": "programming",
         "extensions": [
             ".mu"
         ],
+        "tm_scope": "source.mupad",
         "ace_mode": "text",
         "language_id": 416
     },
@@ -6885,6 +7915,7 @@ module.exports = {
         "extensions": [
             ".ooc"
         ],
+        "tm_scope": "source.ooc",
         "ace_mode": "text",
         "language_id": 418
     },
@@ -6910,6 +7941,7 @@ module.exports = {
             ".rest.txt",
             ".rst.txt"
         ],
+        "tm_scope": "text.restructuredtext",
         "ace_mode": "text",
         "codemirror_mode": "rst",
         "codemirror_mime_type": "text/x-rst",
