@@ -14,8 +14,13 @@ Injex.create({
         }),
         new EnvPlugin({
             defaults: {
-                port: process.env.PORT || 6060,
+                port: 6060,
                 githubToken: process.env.GITHUB_TOKEN
+            },
+            environments: {
+                production: {
+                    port: process.env.PORT
+                }
             }
         })
     ]
