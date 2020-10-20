@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "rootDir": "./src",
+        "module": "commonjs",
+        "alwaysStrict": true,
+        "importHelpers": true,
+        "target": "es2017",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "allowJs": true,
+        "preserveConstEnums": true
+    },
+    "exclude": [
+        "node_modules",
+        "scripts",
+        "jest.config.js",
+        "data/languages.js"
+    ]
+}

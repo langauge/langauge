@@ -1,0 +1,38 @@
+<svg viewBox="0 0 {{width}} {{height}}" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    {{#each languages}}
+    <g transform="translate({{this.translateX}}, {{this.translateY}})" stroke="none" stroke-width="1" fill="none"
+        fill-rule="evenodd">
+        <g transform="translate(0, -10.000000)">
+
+            <circle fill="{{this.color}}" cx="51" cy="51" r="32"></circle>
+
+            <g transform="translate(45.000000, 27.000000) rotate({{this.rotation}}, 6, 24)" fill="#000000">
+
+                <path
+                    d="M6,0 L6,0 C7.65685425,-3.04359188e-16 9,1.34314575 9,3 L9,21 C9,22.6568542 7.65685425,24 6,24 L6,24 C4.34314575,24 3,22.6568542 3,21 L3,3 C3,1.34314575 4.34314575,3.04359188e-16 6,0 Z">
+                </path>
+
+                <circle cx="6" cy="24" r="6"></circle>
+            </g>
+
+            <path
+                d="M51,87 C70.882251,87 87,70.882251 87,51 C87,31.117749 70.882251,15 51,15 C31.117749,15 15,31.117749 15,51"
+                stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+                transform="translate(51.000000, 51.000000) rotate(-45.000000) translate(-51.000000, -51.000000) ">
+            </path>
+
+        </g>
+
+        <text text-anchor="middle" font-family="'OpenSans-Regular, Open Sans'" font-size="12" font-weight="normal"
+            fill="#000000">
+            <tspan x="50" y="92">{{this.language}}</tspan>
+        </text>
+        <text text-anchor="middle" font-family="'OpenSans-Bold, Open Sans'" font-size="12" font-weight="bold"
+            fill="#000000">
+            <tspan x="50" y="110">{{this.percent}}%</tspan>
+        </text>
+    </g>
+    {{/each}}
+</svg>
