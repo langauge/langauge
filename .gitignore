@@ -1,9 +1,0 @@
-.DS_Store
-.idea
-.vscode
-node_modules
-src/**/*.js
-config/**/*.js
-*.js.map
-app.js
-*.log
