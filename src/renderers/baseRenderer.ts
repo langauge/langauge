@@ -52,7 +52,7 @@ export abstract class BaseRenderer implements IRenderer {
 
         return _.reduce(languagesBytes, (result: IRendererLanguage[], bytes: number, language: string) => {
 
-            const percent = bytes / this.totalBytes * 100
+            const percent = bytes / this.totalBytes * 100;
 
             result.push({
                 language,
