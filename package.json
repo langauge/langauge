@@ -30,7 +30,7 @@
     "@injex/env-plugin": "^2.0.4",
     "@injex/express-plugin": "^2.0.4",
     "@injex/node": "^2.0.4",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "handlebars": "^4.7.6",
     "joi": "^17.2.1",
